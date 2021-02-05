@@ -1,0 +1,26 @@
+[Statedef 9000]
+type = S
+anim = 7506
+sprpriority = 7
+supermove = 1
+supermovetime = 15
+pausemovetime = 15
+
+
+[State 8000, HitSpark randômico]
+type = Explod
+trigger1 = animelem = 1
+anim = 7535
+ID = 7535
+pos = -40,-30
+scale = 0.1,0.1
+sprpriority = 9
+ignorehitpause = 1
+removetime = 80
+supermove = 1
+supermovetime = 10
+pausemovetime = 10
+
+[State 8000, fim]
+type = DestroySelf
+trigger1 = Animtime = 0

@@ -1,0 +1,68 @@
+;================================
+;Vegeta Type-R
+;================================
+
+;------------------------------------------------------
+;Author:	Roken
+;		http://www.rokcorp.net
+;------------------------------------------------------
+
+;=============================================================
+
+;---------------------
+;Character Information
+;---------------------
+[Info]
+name            ="Vegeta-Type-R"
+displayname     ="Vegeta"
+;versiondate    = 
+mugenversion    =01.04.14
+author          ="Roken"
+versiondate=19/07/2006
+pal.defaults=1,2,3,4,5
+;pal.defaults   = 
+
+;---------------------
+;Character Files
+;---------------------
+
+[Files]
+cns             =Vegeta.cns
+st              =Basic.st
+cmd             =Vegeta.cmd
+stcommon        =common1.cns
+
+;---------------------
+;Sprite/Sound
+;---------------------
+sprite          =Vegeta.sff
+anim            =Vegeta.air
+sound           =Vegeta.snd
+pal1=Vegeta.act
+pal2=
+pal3=
+pal4=
+pal5=
+pal6=
+pal7=
+pal8=
+pal9=
+pal10=
+pal11=
+pal12=
+st1=Special.st
+st2=Ki.st
+st3=Super.st
+st4=Helper.st
+st5=Finishers.st
+st6=volar.cns
+
+;---------------------
+;Palletes
+;---------------------
+[Criado no Z-CharCAD]
+Home Page=http://www.geocities.com/zmugen
+E-mail=zmugen@yahoo.com.br
+[Arcade]
+intro.storyboard=intro.def
+ending.storyboard= 

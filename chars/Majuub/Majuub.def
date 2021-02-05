@@ -1,0 +1,26 @@
+[Info]
+name ="Ultimate Ubu BY SOUZA"
+displayname ="Majuub"
+versiondate =05,07,1752
+mugenversion =11,29,2000
+author ="SOUZA"
+pal.defaults =1,2,3,4,5,6,7,8,9,10,11,12
+
+[Files]
+;cmd =ubunormal.cmd
+cmd =ubuAI.cmd
+cns =ubu.cns
+st =ubu.cns
+stcommon =common.cns
+sprite =ubu.sff
+anim =ubu.air
+sound =ubu.snd
+pal1=uubu.act
+st1=ubuvs.cns
+st2=combo.cns
+st3=AI.cns
+st4=Team.cns
+
+[Arcade]
+intro.storyboard =
+ending.storyboard =

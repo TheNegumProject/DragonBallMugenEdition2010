@@ -1,0 +1,37 @@
+; Definition file for Kung Fu Man
+; Contains all the filenames needed for the character
+
+; Player information
+[Info]
+name ="Trunks-Ussj"
+displayname ="Trunks-Ussj"
+versiondate =04,14,2002
+mugenversion =04,14,2002
+author ="Kenshin"
+pal.defaults =6,3,4,2
+
+; Files for the player
+[Files]
+cmd     =Trunks.cmd
+cns     =Trunks.cns
+st      =Trunks.cns
+stcommon =common1.cns
+sprite  =Trunks.sff
+anim    =Trunks.air
+sound   =Trunks.snd
+pal1=trunks.act
+st1=Charge.cns
+st2=Supers.cns
+st3=Fly.cns
+st4=Sparks.cns
+st5=Helpers.cns
+
+; Arcade mode
+[Arcade]
+ending.storyboard =ending.def
+
+;[CREDITS]
+;Sawady Tus fxs tus ideas
+;Neocide El Sheet
+;Elecbyte Krear la base kfm
+;Otros x darme ideas, ellos ia saben.... xD

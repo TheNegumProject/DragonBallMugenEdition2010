@@ -1,0 +1,263 @@
+; Volar inicio
+[Statedef 9100]
+type = A
+movetype = I
+physics = A
+juggle  = 7
+velset = 0, -8, 0
+poweradd= -70
+ctrl = 0
+
+[State 9100, 1]
+type = changeanim
+triggerall = Var(1) = 0
+trigger1 = time = 0
+value = 9100
+
+[State 9100, 2]
+type = PlaySnd
+trigger1 = AnimElem = 1
+value = 50, 1
+
+[State 9100, 4]
+type = ChangeState
+triggerall = Var(1) = 0
+trigger1 = AnimTime = 0
+value = 9101
+ctrl = 1
+
+[State 9100, 4]
+type = ChangeState
+triggerall = Var(1) = 1
+trigger1 = AnimTime = 0
+value = 9101
+ctrl = 1
+
+[State 9100, 4]
+type = ChangeState
+triggerall = Var(1) = 2
+trigger1 = AnimTime = 0
+value = 9101
+ctrl = 1
+
+;---------------------------------------------------------------------------
+;Volar
+[Statedef 9101]
+type = S
+movetype = I
+physics = N
+ctrl = 0
+velset = 0,0
+
+[State 9101, 1]
+type = changeanim
+triggerall = Var(1) = 0
+trigger1 = time = 0
+value = 9101
+
+[State 9101, para1]
+type = VelSet
+trigger1 = command != "holdfwd"
+trigger1 = command != "holdback"
+trigger1 = command != "holdup"
+trigger1 = command != "holddown"
+trigger1 = Var(2) = 0
+trigger2 = Pos Y < -405
+x = 0
+y = 0
+
+[State 9101, para2]
+type = ChangeAnim
+triggerall = Var(1) = 0
+trigger1 = command != "holdup"
+trigger1 = command != "holddown"
+trigger1 = Anim != 9101
+value = 9101
+
+[State 9101,fuwaVar(1)]
+type = VarSet
+trigger1 = command != "holdfwd"
+trigger1 = command != "holdback"
+trigger1 = command != "holdup"
+trigger1 = command != "holddown"
+trigger1 = var(2) != 2
+trigger2 = var(2) = 2
+trigger2 = Vel Y >= 2.4
+v = 2
+value = 1
+
+[State 1900,fuwaVar(2)]
+type = VarSet
+trigger1 = Var(2) = 1
+trigger1 = Vel Y <= -2.4
+trigger2 = P2BodyDist Y > 405
+trigger2 = Vel Y < 0
+v = 2
+value = 2
+
+[State 9101,fuwaUp]
+type = VelAdd
+trigger1 = Var(2) = 1
+y = -0.2
+
+[State 9101,fuwaDown]
+type = VelAdd
+trigger1 = Var(2) = 2
+y = 0.2
+
+[State 9101,fuwaEnd]
+type = VelSet
+triggerall = Var(2) != 0
+trigger1 = command = "holdfwd"
+trigger2 = command = "holdback"
+trigger3 = command = "holdup"
+trigger4 = command = "holddown"
+y = 0
+
+[State 9101,fuwaEndVar]
+type = VarSet
+trigger1 = command = "holdfwd"
+trigger2 = command = "holdback"
+trigger3 = command = "holdup"
+trigger4 = command = "holddown"
+v = 2
+value = 0
+
+[State 9101, UpBorder]
+type = PosSet
+trigger1 = Pos Y < -405
+y = -405
+
+[State 1500, UpBorder2a]
+type = PosAdd
+trigger1 = P2BodyDist Y > 405
+trigger1 = Vel Y < 0
+y = 1
+
+[State 1500, UpBorder2b]
+type = VelSet
+trigger1 = P2BodyDist Y > 405
+trigger1 = Vel Y < 0
+y = 0
+
+[State 9101, GoDown1]
+type = VelAdd
+trigger1 = command = "holddown"
+y = 0.3
+
+[State 9101,GoDown2]
+type = VelSet
+trigger1 = command = "holddown"
+trigger1 = Vel Y < 0
+y = 0
+
+[State 1900, GoUpAnim]
+type = ChangeAnim
+triggerall = Var(1) = 0
+trigger1 = Anim != 9104
+trigger1 = command = "holddown"
+value = 9104
+
+[State 9101, GoUp1]
+type = VelAdd
+trigger1 = command = "holdup"
+y = -0.3
+
+[State 9101,GoUp2]
+type = VelSet
+trigger1 = command = "holdup"
+trigger1 = Vel Y > 0
+y = 0
+
+[State 9101, GoUpAnim]
+type = ChangeAnim
+triggerall = Var(1) = 0
+trigger1 = Anim != 9100
+trigger1 = command = "holdup"
+value = 9100
+
+[State 9101, GoBack1]
+type = VelAdd
+trigger1 = command = "holdback"
+x = -0.3
+
+[State 9101,GoBack2]
+type = VelSet
+trigger1 = command = "holdback"
+trigger1 = Vel X > 0
+x = 0
+
+[State 9101, GoBackAnim]
+type = ChangeAnim
+triggerall = Var(1) = 0
+trigger1 = Anim != 9103
+trigger1 = command = "holdback"
+value = 9103
+
+[State 1900, GoFwd1]
+type = VelAdd
+trigger1 = command = "holdfwd"
+x = 0.3
+
+[State 1900,GoFwd2]
+type = VelSet
+trigger1 = command = "holdfwd"
+trigger1 = Vel X < 0
+x = 0
+
+[State 1900, GoFwdAnim]
+type = ChangeAnim
+triggerall = Var(1) = 0
+trigger1 = Anim != 9102
+trigger1 = command = "holdfwd"
+value = 9102
+
+[State 501, GoFwd1]
+type = VelAdd
+trigger1 = command = "holdfwd"
+x = 0.3
+
+[State 9101,GoFwd2]
+type = VelSet
+trigger1 = command = "holdfwd"
+trigger1 = Vel X < 0
+x = 0
+
+[State 9101,Turn]
+type = Turn
+trigger1 = P2dist X < 0
+
+[State 9101,Land]
+type = ChangeState
+triggerall = Var(1) = 0
+trigger1 = Pos Y >= 0
+value = 50
+ctrl = 1
+
+[State 9101,Land]
+type = ChangeState
+triggerall = Var(1) = 1
+trigger1 = Pos Y >= 0
+value = 50
+ctrl = 1
+
+[State 9101,Land]
+type = ChangeState
+triggerall = Var(1) = 2
+trigger1 = Pos Y >= 0
+value = 50
+ctrl = 1
+
+[State 9101,End]
+type = ChangeState
+trigger1 = Time > 2
+trigger1 = command = "Volar inicio"
+value = 9104
+ctrl = 1
+
+[State 2000,WinALose]
+type = ChangeState
+trigger1 = Win = 1
+trigger2 = Lose = 1
+value = 9104
+

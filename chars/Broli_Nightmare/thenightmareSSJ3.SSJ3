@@ -1,0 +1,2078 @@
+;ai command
+[command]
+name = "ai1"
+command = D
+time = 1
+
+[command]
+name = "ai2"
+command = F
+time = 1
+
+;--------------------------------------------------------------------------------
+
+[Command]
+name = "QCF2_x";
+command = ~D, DF, F, a;
+
+[Command]                      ;
+name = "YOG_b";
+command = D, DF, F, c;
+
+[Command]                ;
+name = "QCBF_b";
+command = ~D, DF, F, b;
+
+[Command]            ;
+name = "USSJ_Z";
+command = /z
+
+[Command]            ;
+name = "USSJ_C";
+command = /c;
+
+[Command]                   ;
+name = "Meteor Smash";
+command = ~D, DB, B, a;
+
+[Command]                 ;
+name = "Hyper Dash";
+command = ~D, DB, B, b;
+
+[Command]                ;
+name = "Ultimate";
+command = ~D, DB, B, c;
+
+[Command]
+name = "Renzoku Energy Dan";
+command = ~D, DF, F, D, DF, F, z;
+
+[Command]           ;
+name = "SON_bx";
+command = ~B, F, z;
+
+[Command]                 ;
+name = "MGS_EX";
+command = ~B, F, c;
+
+[Command];
+name = "Bakuhatsu Ha EX";
+command = ~D, DF, F, D, DF, F, y;
+
+[Command];
+name = "Shogekiha";
+command = ~D, B, D, B, s;
+
+[Command]                   ;
+name = "Seeker Blast"        ;
+command = ~D, DF, F, D, DF, F, x;
+
+[Command]                 ;
+name = "Earthquake";
+command = F, D, F, s;
+
+[Command]                       ;
+name = "High Jump";
+command = ~D, U;
+
+[Command]          ;
+name = "High Jump";
+command = ~D, UF;
+
+[Command]             ;
+name = "High Jump";
+command = ~D, UB;
+
+[Command]                ;
+name = "FBF_a"            ;
+command = ~B, F, b      ;
+
+[Command]               ;
+name = "FBF_b"                ;
+command = ~D, DB, B, z     ;
+
+[Command]              ;
+name = "DU_b"              ;
+command = ~D, B, D, B, y  ;
+
+[Command]                   ;
+name = "Smasher"          ;
+command = ~B, F, x     ;
+
+[Command]        ;
+name = "SON_x"     ;
+command = ~B, F, y        ;
+
+[Command]              ;
+name = "Kikou Ha"         ;
+command = ~D, DF, F, x    ;
+
+[Command]         ;
+name = "QCB_b"            ;
+command = ~D, DF, F, z     ;
+
+[Command]     ;
+name = "Hell's Smash"        ;
+command = ~B, F, a      ;
+
+[Command]             ;
+name = "Bukuu Jutsu"       ;  
+command = x+y      
+time = 99999999999999;
+
+[Command]                      ;
+name = "Instantaneous Movement" ;
+command = y+z                       ;           
+
+[Command]                       ;
+name = "Instantaneous Movement" ;
+command = x+z                     ;             
+
+[Command]                    ;
+name = "Instantaneous Movement" ;
+command = ~D, DB, B, x               ;             
+
+[Command]          ;
+name = "Smash Down"         ;
+command = ~F, B, DB, D, y       ;           
+time = 999
+
+[command];
+name = "comboSSJ5";
+command = ~D, F, y+s;
+
+[command];
+name = "éclair";
+command = ~D, DF, F, y+c;
+
+;[command]
+;name = "fracas"
+;command =x+b ;~D, B, F, x+b
+;time = 99
+
+[Command]        ;
+name = "FF"             ; 
+command = F, F   ;
+time = 99
+
+[Command]            ;
+name = "BB"           ;    
+command = B, B     
+time = 99;
+
+[Command]            ;
+name = "UU"            ; 
+command = U, U        ;
+time = 99
+
+[Command]             ;
+name = "DD"               
+command = D, D   ;
+time = 15;
+
+[Command]             ;
+name = "recovery"     ;      
+command = x+y          ;                 
+time = 1;
+
+[Command]          ;
+name = "recovery"      ;  
+command = y+z         ;                  
+time = 1;
+
+[Command]            ;
+name = "recovery"      ;        
+command = x+z          ;            
+time = 1;
+
+[Command]    ;
+name = "ax"            ;
+command = a+b        ;              
+time = 15         ;
+
+[Command]            ; 
+name = "holda"      ;      
+command = /a      ;
+time = 1;
+[Command]       ;
+name = "holdx"     ;    
+command = /x   ;
+time = 1;
+
+[Command]         ;
+name = "holdb"     ;
+command = /b      ;
+time = 1   ;
+[Command]        ;
+name = "holdy"     ;
+command = /y    ;
+time = 1   ;
+
+[Command]     ;
+name = "fwd_x"      ;     
+command = /F, x    ;
+time = 1;
+[Command]          ;
+name = "fwd_x"      ;
+command = /F, y    ;
+time = 1;
+[Command]        ;
+name = "fwd_y"        ; 
+command = /F, z     ;
+time = 1;
+[Command]           ;    
+name = "fwd_z"     ;
+command = /F, c  ;
+time = 1;
+
+[Command]    ;
+name = "a"      ;      
+command = a       ;   
+time = 1;
+
+[Command]     ;
+name = "b"        ;      
+command = b   ;
+time = 1;
+
+[Command]       ;    
+name = "c"         ;      
+command = c      ;
+time = 1;
+
+[Command]         ;
+name = "x"     ;
+command = x   ;
+time = 1;
+
+[Command]         ; 
+name = "y"         ; 
+command = y   ;
+time = 1;
+
+[Command]          ;      
+name = "z"         ;     
+command = z   ;
+time = 1;
+
+[Command];
+name = "s";
+command = s;
+time = 1;
+
+[Command]          ;      
+name = "holdfwd"    ;    
+command = /$F     ;
+time = 1;
+
+[Command]          ;   
+name = "holdback"    ;         
+command = /$B        ;    
+time = 1;
+
+[Command]            ;   
+name = "holdup"      ;    
+command = /$U;
+time = 1;
+
+[Command]    ;
+name = "holddown" ;
+command = /$D      ;
+time = 1;
+
+[Command]           ;
+name = "holdz"       ;      
+command = /z    ;
+time = 1
+
+[Command]        ;
+name = "holdc"       ; 
+command = /c  ;
+time = 1;
+
+;--------------------------------------------------------------------------------------
+[statedef -1]
+
+;K.F.M.S.W.A                    
+;Triple KF Palm Broli Style
+[State -1]
+type = ChangeState
+value = 3000
+triggerall = command = "QCF2_x"
+triggerall = power >= 1000
+triggerall = stateno != 3010
+triggerall = stateno != 3020
+triggerall = stateno !=2014
+triggerall = stateno !=1070
+triggerall = stateno !=7775
+triggerall = stateno !=4100
+triggerall = stateno !=4101
+triggerall = stateno !=4102
+triggerall = stateno !=4103
+triggerall = stateno !=4104
+triggerall = stateno !=4105
+triggerall = stateno != 700
+triggerall = stateno != 701
+triggerall = stateno != 704
+trigger1 = statetype = S
+trigger1 = ctrl = 1
+
+trigger2 = statetype != A
+trigger2 = hitdefattr = SC, NA, SA
+trigger2 = movecontact = 1
+
+trigger3 = stateno >= 150       
+trigger3 = stateno <= 153       
+trigger4 = stateno = 5120     
+trigger5 = stateno = 2000
+trigger6 = movecontact = 1
+trigger6 = stateno = 1020
+
+;--------------------------------------------------------------------------------
+;Punition de Kakaroto
+[State -1]
+type = ChangeState
+value = 7775
+triggerall = power >= 5000
+triggerall = command = "éclair"
+trigger1 = ctrl = 1
+trigger1 = statetype != A
+trigger2 = stateno = 40          
+
+trigger3 = stateno >= 150      
+trigger3 = stateno <= 153  
+
+;------------------------------------------------------------------------------------
+;l'ultime fracas légendaire
+;[State -1]
+;type = ChangeState
+;value = 4300
+;triggerall = var(20) = 1
+;triggerall = roundno >= 2
+;triggerall = p2life < 500
+;triggerall = command = "fracas"
+;trigger1 = ctrl = 1
+;trigger1 = statetype != A
+
+;-------------------------------| Description |-----------------------------
+
+;Eraser Cannon
+[State -1]
+type = ChangeState
+value = 3010
+triggerall = power >= 1000
+triggerall = command = "YOG_b"
+triggerall = stateno != 3010
+triggerall = stateno != 3020
+triggerall = stateno !=2014
+triggerall = stateno !=1070
+triggerall = stateno !=7775
+triggerall = stateno !=4100
+triggerall = stateno !=4101
+triggerall = stateno !=4102
+triggerall = stateno !=4103
+triggerall = stateno !=4104
+triggerall = stateno !=4105
+triggerall = stateno !=4300
+triggerall = stateno != 700
+triggerall = stateno != 701
+triggerall = stateno != 704
+trigger1 = statetype = S
+trigger1 = ctrl = 1
+
+trigger2 = statetype != A
+trigger2 = hitdefattr = SC, NA, SA
+trigger2 = movecontact = 1
+trigger3 = stateno = 5120       
+trigger4 = stateno = 2000
+trigger5 = movecontact = 1
+trigger5 = stateno = 1020
+trigger6 = movecontact = 1
+trigger6 = stateno = 3000
+trigger7 = stateno >= 150        
+trigger7 = stateno <= 153    
+
+;-------------------------------| Description |-----------------------------
+
+Throwing Blaster
+[State -1]
+type = ChangeState
+value = 3020
+triggerall = power >= 1000
+triggerall = stateno != 3010
+triggerall = stateno != 3020
+triggerall = command = "QCBF_b"
+triggerall = stateno !=2014
+triggerall = stateno !=1070
+triggerall = stateno !=7775
+triggerall = stateno !=4100
+triggerall = stateno !=4101
+triggerall = stateno !=4102
+triggerall = stateno !=4103
+triggerall = stateno !=4104
+triggerall = stateno !=4105
+triggerall = stateno != 700
+triggerall = stateno != 701
+triggerall = stateno != 704
+trigger1 = statetype = S
+trigger1 = ctrl = 1
+
+trigger2 = hitdefattr = SC, NA, SA
+trigger2 = movecontact = 1
+
+trigger3 = stateno = 5120       
+trigger4 = stateno = 2000
+trigger5 = movecontact = 1
+trigger5 = stateno = 1020
+trigger6 = movecontact = 1
+trigger6 = stateno = 3000
+trigger7 = stateno >= 150      
+trigger7 = stateno <= 153     
+
+;-------------------------------| Description |-----------------------------
+
+;USSJ Mode Transformation
+[State -1]
+type = ChangeState
+value = 3030
+triggerall = p1name != "broly mode soft" 
+triggerall = power >= 8000
+triggerall = command = "USSJ_Z"
+triggerall = command = "USSJ_C"
+triggerall = Var(5) != 1
+triggerall = var(20) != 1
+triggerall = stateno != 2000
+triggerall = stateno = 0
+triggerall = pos y = 0
+trigger1 = life >= 501
+trigger1 = ctrl = 1
+
+;-------------------------------| Description |-----------------------------
+ssj5 transformation
+[State -1]
+type = ChangeState
+value = 90000
+triggerall = p1name != "broly mode soft"
+triggerall = power >= 10000
+triggerall = command = "USSJ_Z"
+triggerall = command = "USSJ_C"
+triggerall = Var(5) = 1
+triggerall = Var(20) != 1
+triggerall = var(20) != 2
+triggerall = life >= 501
+triggerall = stateno != 2000
+trigger1 = statetype = S
+trigger1 = ctrl = 1
+
+
+;-------------------------------| Description |-----------------------------
+
+;Meteor Smash
+[State -1]
+type = ChangeState
+value = 3040
+triggerall = command = "Meteor Smash"
+triggerall = power >= 1000
+triggerall = stateno !=2014
+triggerall = stateno !=2015
+triggerall = stateno !=1070
+triggerall = stateno !=7775
+triggerall = stateno !=4100
+triggerall = stateno !=4101
+triggerall = stateno !=4102
+triggerall = stateno !=4103
+triggerall = stateno !=4104
+triggerall = stateno !=4105
+triggerall = stateno != 700
+triggerall = stateno != 701
+triggerall = stateno != 704
+trigger1 = statetype = S
+trigger1 = ctrl = 1
+trigger2 = hitdefattr = SC, NA, SA
+trigger2 = movecontact 
+trigger3 = stateno = 2000
+trigger4 = power < 3000 
+trigger4 = power > 1500
+trigger4 = stateno = 0
+trigger5 = command = "ai1"
+trigger6 = stateno >= 150     
+trigger6 = stateno <= 153    
+
+;-------------------------------| Description |-----------------------------
+
+;Hyper Dash
+[State -1]
+type = ChangeState
+value = 3050
+triggerall = command = "Hyper Dash"
+triggerall = power >= 500
+triggerall = stateno !=2014
+triggerall = stateno !=1070
+triggerall = stateno !=7775
+triggerall = stateno !=4100
+triggerall = stateno !=4101
+triggerall = stateno !=4102
+triggerall = stateno !=4103
+triggerall = stateno !=4104
+triggerall = stateno !=4105
+triggerall = stateno != 700
+triggerall = stateno != 701
+triggerall = stateno != 704
+trigger1 = statetype = S
+trigger1 = ctrl = 1
+trigger2 = hitdefattr = SC, NA, SA
+trigger2 = movecontact = 1
+
+trigger3 = stateno = 2000
+
+trigger4 = stateno >= 150       
+trigger4 = stateno <= 153   
+trigger5 = var(20) = 1
+trigger5 = stateno = 0
+trigger6 = command = "ai1"   
+
+
+;---------------------------------------------------------------------------
+;comboSSJ5
+[State -1]
+type = ChangeState
+value = 10000
+triggerall = var(5) = 1
+triggerall = p1name != "broly mode soft"
+triggerall = Var(20) != 1
+triggerall = Var(20) != 2
+triggerall = command = "comboSSJ5"
+triggerall = power >= 10000
+trigger1 = ctrl = 1
+
+trigger2 = stateno >= 150        
+trigger2 = stateno <= 153   
+
+;-------------------------------| Description |-----------------------------
+
+;Ultimate
+[State -1]
+type = ChangeState
+value = 3060
+triggerall = Var(20) != 1
+triggerall = command = "Ultimate"
+triggerall = power >= 2000
+triggerall = stateno !=2014
+triggerall = stateno !=1070
+triggerall = stateno !=7775
+triggerall = stateno !=4100
+triggerall = stateno !=4101
+triggerall = stateno !=4102
+triggerall = stateno !=4103
+triggerall = stateno !=4104
+triggerall = stateno !=4105
+triggerall = stateno != 700
+triggerall = stateno != 701
+triggerall = stateno != 704
+trigger1 = statetype = S
+trigger1 = ctrl = 1
+trigger2 = hitdefattr = SC, NA, SA
+trigger2 = movecontact = 1
+
+trigger3 = stateno = 2000
+
+trigger4 = stateno >= 150       
+trigger4 = stateno <= 153     
+
+;===========================================================================
+
+;-| SpecialEX Moves |---------------| Description |-------------------------
+
+;-------------------------------| Description |-----------------------------
+
+;Renzoku Energy Dan
+[State -1]
+type = ChangeState
+value = 4000
+triggerall = command = "Renzoku Energy Dan"
+triggerall = stateno !=4100
+triggerall = stateno !=4101
+triggerall = stateno !=4102
+triggerall = stateno !=4103
+triggerall = stateno !=4104
+triggerall = stateno !=4105
+triggerall = stateno != 700
+triggerall = stateno != 701
+triggerall = stateno != 704
+trigger1 = statetype = S
+trigger1 = ctrl = 1
+trigger2 = stateno = 2000
+
+;-------------------------------| Description |-----------------------------
+
+;Smasher Lariat EX
+[State -1]
+type = ChangeState
+value = 1011
+triggerall = command = "SON_bx"
+triggerall = power >= 500
+triggerall = stateno !=4100
+triggerall = stateno !=4101
+triggerall = stateno !=4102
+triggerall = stateno !=4103
+triggerall = stateno !=4104
+triggerall = stateno !=4105
+triggerall = stateno != 700
+triggerall = stateno != 701
+triggerall = stateno != 704
+trigger1 = statetype = S
+trigger1 = ctrl = 1
+
+trigger2 = stateno = 2000
+
+trigger3 = stateno >= 150        
+trigger3 = stateno <= 153       
+
+
+;--------------------------------| Description |----------------------------
+
+;Smasher Lariat EX - During Combos
+[State -1]
+type = ChangeState
+value = 1011
+triggerall = command = "SON_bx"
+triggerall = movecontact = 1
+triggerall = power >= 500
+
+;------------------------------------
+;Combo Triggers for Smasher Lariat EX
+;------------------------------------
+
+trigger1 = stateno = 200
+trigger2 = stateno = 201
+trigger3 = stateno = 202
+trigger4 = stateno = 210
+trigger5 = stateno = 211
+trigger6 = stateno = 212
+trigger7 = stateno = 400
+trigger8 = stateno = 410
+trigger9 = stateno = 1020
+trigger9 = time >= 50
+
+;--------------------------------| Description |----------------------------
+
+;Machine Gun Shooter EX
+[State -1]
+type = ChangeState
+value = 1021
+triggerall = command = "MGS_EX"
+triggerall = power >= 500
+trigger1 = statetype = S
+trigger1 = ctrl = 1
+
+trigger2 = stateno = 2000
+
+trigger3 = stateno >= 150        
+trigger3 = stateno <= 153       
+
+;--------------------------------| Description |----------------------------
+
+;Machine Gun Shooter EX - During Combos
+[State -1]
+type = ChangeState
+value = 1021
+triggerall = command = "MGS_EX"
+triggerall = movecontact = 1
+
+;-----------------------------------------
+;Combo Triggers for Machine Gun Shooter EX
+;-----------------------------------------
+
+trigger1 = stateno = 200
+trigger2 = stateno = 201
+trigger3 = stateno = 202
+trigger4 = stateno = 210
+trigger5 = stateno = 211
+trigger6 = stateno = 212
+trigger7 = stateno = 400
+trigger8 = stateno = 410
+trigger9 = stateno = 1020
+trigger9 = time >= 50
+
+;--------------------------------| Description |----------------------------
+
+;Bakuhatsu Ha EX
+[State -1]
+type = ChangeState
+value = 1071
+triggerall = p1name != "broly mode soft"
+triggerall = power >= 10000
+triggerall = command = "Bakuhatsu Ha EX"
+triggerall = var(5) = 1
+trigger1 = ctrl = 1
+trigger1 = statetype != A
+trigger2 = stateno = 40          
+trigger3 = stateno = 2000
+
+trigger4 = stateno >= 150       
+trigger4 = stateno <= 153   
+
+;-----------------------------------------------------------------------------
+;Bakuhatsu Ha EX
+[State -1]
+type = ChangeState
+value = 1071
+triggerall = p1name != "broly mode soft"
+triggerall = var(20) = 1
+triggerall = command = "Bakuhatsu Ha EX"
+trigger1 = ctrl = 1
+trigger1 = statetype != A
+trigger2 = stateno = 40          
+trigger3 = stateno = 2000
+
+trigger4 = stateno >= 150       
+trigger4 = stateno <= 153    
+
+;--------------------------------| Description |----------------------------
+
+;Bakuhatsu Ha EX - During Combos
+[State -1]
+type = ChangeState
+value = 1071
+triggerall = var(5) = 1
+triggerall = command = "Bakuhatsu Ha EX"
+triggerall = movecontact = 1
+triggerall = power >= 5000
+triggerall = p1name != "broly mode soft"
+;----------------------------------
+;Combo Triggers for Bakuhatsu Ha EX
+;----------------------------------
+
+trigger1 = stateno = 200
+trigger2 = stateno = 201
+trigger3 = stateno = 202
+trigger4 = stateno = 210
+trigger5 = stateno = 211
+trigger6 = stateno = 212
+trigger7 = stateno = 400
+trigger8 = stateno = 410
+trigger9 = stateno = 1010
+trigger10 = stateno = 1020
+trigger11 = stateno = 3000
+
+;--------------------------------| Description |----------------------------
+
+;Seeker Blast
+[State -1]
+type = ChangeState
+value = 2005
+triggerall = command = "Seeker Blast"
+
+trigger1 = statetype = S
+trigger1 = ctrl = 1
+
+trigger2 = stateno = 2000
+
+;--------------------------------| Description |----------------------------
+
+;Shogekiha
+[State -1]
+type = ChangeState
+value = 2012
+triggerall = p2name != "Himan version beta"
+triggerall = var(5) = 1
+triggerall = p1name != "broly mode soft"
+triggerall = command = "Shogekiha"
+triggerall = var(20) != 2
+trigger1 = ctrl = 1
+trigger2 = stateno = 1070
+trigger2 = Time  >= 15
+trigger2 = Power > 10000
+trigger3 = stateno = 2000
+
+trigger4 = stateno >= 150       
+trigger4 = stateno <= 153   
+
+;--------------------------------| Description |----------------------------
+
+;Shogekiha
+[State -1]
+type = ChangeState
+value = 2012
+triggerall = p2name != "Himan version beta"
+triggerall = var(5) = 1
+triggerall = p1name != "broly mode soft"
+triggerall = command = "Shogekiha"
+triggerall = var(20) = 1
+triggerall = var(20) != 2
+trigger1 = ctrl = 1
+trigger2 = stateno = 1070
+trigger2 = Time  >= 15
+trigger2 = Power > 10000
+trigger3 = stateno = 2000
+
+trigger4 = stateno >= 150       
+trigger4 = stateno <= 153  
+
+;--------------------------------| Description |----------------------------
+
+;Earthquake
+[State -1]
+type = ChangeState
+value = 2015
+triggerall = p2name != "Himan version beta"
+triggerall = var(5) = 1
+triggerall = p1name != "broly mode soft"
+triggerall = command = "Earthquake"
+triggerall = power >= 10000
+triggerall = var(20) != 2
+trigger1 = ctrl = 1
+
+trigger2 = stateno >= 150       
+trigger2 = stateno <= 153 
+
+;--------------------------------| Description |----------------------------
+
+;Earthquake
+[State -1]
+type = ChangeState
+value = 2015
+triggerall = p2name != "Himan version beta"
+triggerall = var(5) = 1
+triggerall = p1name != "broly mode soft"
+triggerall = command = "Earthquake"
+triggerall = var(20) = 1
+triggerall = var(20) != 2
+trigger1 = ctrl = 1
+
+trigger2 = stateno >= 150       
+trigger2 = stateno <= 153      
+
+;--------------------------------| Description |----------------------------
+
+;Earthquake - During Combos
+[State -1]
+type = ChangeState
+value = 2015
+triggerall = p2name != "Himan version beta"
+triggerall = command = "Earthquake"
+triggerall = var(5) = 1
+triggerall = Var(3) = 0
+triggerall = power >= 10000
+triggerall = movecontact = 1
+triggerall = var(20) != 2
+triggerall = p1name != "broly mode soft"
+;-----------------------------
+;Combo Triggers for Earthquake
+;-----------------------------
+
+trigger1 = stateno = 200
+trigger2 = stateno = 201
+trigger3 = stateno = 202
+trigger4 = stateno = 210
+trigger5 = stateno = 211
+trigger6 = stateno = 212
+trigger7 = stateno = 400
+trigger8 = stateno = 410
+trigger9 = stateno = 1010
+trigger10 = stateno = 1020
+trigger11 = stateno = 3000
+
+;===========================================================================
+
+;-| Special Moves |-------------| Description |-----------------------------
+
+;Smasher
+[State -1]
+type = ChangeState
+value = 1000
+triggerall = command = "Smasher"
+triggerall = pos y = 0
+
+trigger1 = statetype = S
+trigger1 = ctrl = 1
+
+trigger2 = stateno >= 150      
+trigger2 = stateno <= 153     
+
+;--------------------------------| Description |----------------------------
+
+;Smasher Lariat
+[State -1]
+type = ChangeState
+value = 1010
+triggerall = command = "SON_x"
+trigger1 = statetype = S
+trigger1 = ctrl = 1
+
+trigger2 = stateno = 2000
+
+trigger3 = stateno >= 150       
+trigger3 = stateno <= 153  
+
+;---------------------------------| Description |---------------------------
+
+;Smasher Lariat - During Combos
+[State -1]
+type = ChangeState
+value = 1010
+triggerall = command = "SON_x"
+triggerall = movecontact = 1
+
+;---------------------------------
+;Combo Triggers for Smasher Lariat
+;---------------------------------
+
+trigger1 = stateno = 200
+trigger2 = stateno = 201
+trigger3 = stateno = 202
+trigger4 = stateno = 210
+trigger5 = stateno = 211
+trigger6 = stateno = 212
+trigger7 = stateno = 400
+trigger8 = stateno = 410
+trigger9 = stateno = 1020
+trigger9 = time >= 50
+
+;--------------------------------| Description |----------------------------
+
+;Machine Gun Shooter
+[State -1]
+type = ChangeState
+value = 1020
+triggerall = command = "FBF_a"
+trigger1 = statetype = S
+trigger1 = ctrl = 1
+
+trigger2 = stateno = 2000
+
+trigger3 = stateno >= 150        
+trigger3 = stateno <= 153     
+
+;--------------------------------| Description |----------------------------
+
+;Machine Gun Shooter - During Combos
+[State -1]
+type = ChangeState
+value = 1020
+triggerall = command = "FBF_a"
+triggerall = movecontact = 1
+
+;--------------------------------------
+;Combo Triggers for Machine Gun Shooter
+;--------------------------------------
+
+trigger1 = stateno = 200
+trigger2 = stateno = 201
+trigger3 = stateno = 202
+trigger4 = stateno = 210
+trigger5 = stateno = 211
+trigger6 = stateno = 212
+trigger7 = stateno = 400
+trigger8 = stateno = 410
+
+;--------------------------------| Description |----------------------------
+
+;Bakuhatsu Ha
+[State -1]
+type = ChangeState
+value = 1070
+triggerall = p1name != "broly mode soft"
+triggerall = power >= 5000
+triggerall = command = "DU_b"
+triggerall = var(5) = 1
+trigger1 = ctrl = 1
+trigger1 = statetype != A
+trigger2 = stateno = 40  
+trigger3 = stateno = 2000
+
+;--------------------------------| Description |----------------------------
+
+;Bakuhatsu Ha
+[State -1]
+type = ChangeState
+value = 1070
+triggerall = var(5) = 1
+triggerall = p1name != "broly mode soft"
+triggerall = var(20) = 1
+triggerall = command = "DU_b"
+trigger1 = ctrl = 1
+trigger1 = statetype != A
+trigger2 = stateno = 40  
+trigger3 = stateno = 2000
+
+;--------------------------------| Description |----------------------------
+
+;Kiai Hou
+[State -1]
+type = ChangeState
+value = 1060
+triggerall = command = "FBF_b"
+triggerall = stateno != 1041
+triggerall = stateno != 10000
+triggerall = stateno != 2014
+triggerall = stateno != 30003
+triggerall = stateno != 2015
+triggerall = stateno != 1071
+triggerall = stateno != 1070
+triggerall = stateno != 2012
+triggerall = stateno != 3010
+triggerall = stateno != 3020
+triggerall = stateno != 7775
+triggerall = stateno != 3030
+triggerall = stateno != 3000
+triggerall = stateno != 3040
+triggerall = stateno != 1096
+triggerall = stateno != 3060
+triggerall = stateno != 3065
+triggerall = stateno != 3066
+triggerall = stateno != 3067
+triggerall = stateno != 3068
+triggerall = stateno != 3070
+triggerall = stateno != 3075
+triggerall = stateno != 3076
+triggerall = stateno != 3077
+triggerall = stateno != 3080
+triggerall = stateno != 3081
+triggerall = stateno != 3082
+triggerall = stateno != 3085
+triggerall = stateno != 4000
+triggerall = stateno != 90000
+triggerall = stateno !=4100
+triggerall = stateno !=4101
+triggerall = stateno !=4102
+triggerall = stateno !=4103
+triggerall = stateno !=4104
+triggerall = stateno !=4105
+triggerall = stateno != 700
+triggerall = stateno != 701
+triggerall = stateno != 704
+trigger1 = statetype != A
+trigger1 = ctrl = 1
+trigger2 = Time  >= 15
+trigger2 = Power > 0
+trigger3 = stateno = 2000
+
+trigger4 = stateno >= 150      
+trigger4 = stateno <= 153     
+
+;--------------------------------| Description |----------------------------
+
+;Kiai Hou - During Combos
+[State -1]
+type = ChangeState
+value = 1060
+triggerall = command = "FBF_b"
+triggerall = movecontact = 1
+
+;---------------------------
+;Combo Triggers for Kiai Hou
+;---------------------------
+
+trigger1 = stateno = 200
+trigger2 = stateno = 201
+trigger3 = stateno = 202
+trigger4 = stateno = 210
+trigger5 = stateno = 211
+trigger6 = stateno = 212
+trigger7 = stateno = 400
+trigger8 = stateno = 410
+trigger9 = stateno = 1010
+trigger10 = stateno = 3000
+trigger11 = stateno = 1020
+trigger11 = time >= 50
+
+;--------------------------------| Description |----------------------------
+
+;Renzokou Kikou Ha
+[State -1]
+type = ChangeState
+value = 1050
+triggerall = command = "QCB_b"
+trigger1 = statetype = S
+trigger1 = ctrl = 1
+trigger2 = stateno = 2000
+
+;--------------------------------| Description |----------------------------
+
+;Renzokou Kikou Ha - During Combos
+[State -1]
+type = ChangeState
+value = 1050
+triggerall = command = "QCB_b"
+triggerall = movecontact = 1
+
+;------------------------------------
+;Combo Triggers for Renzokou Kikou Ha
+;------------------------------------
+trigger1 = stateno = 200
+trigger2 = stateno = 201
+trigger3 = stateno = 202
+trigger4 = stateno = 210
+trigger5 = stateno = 211
+trigger6 = stateno = 212
+trigger7 = stateno = 400
+trigger8 = stateno = 410
+
+;--------------------------------| Description |----------------------------
+
+;Air Counter Attack - Normal
+[State -1]
+type = ChangeState
+value = 2100
+
+trigger1 = command = "ax"
+trigger1 = CanRecover = 1
+trigger1 = HitFall = 1
+trigger1 = StateType = A
+trigger1 = HitOver = 1
+trigger1 = Alive = 1
+
+;--------------------------------| Description |----------------------------
+
+;Air Counter Attack - USSJ Mode
+[State -1]
+type = ChangeState
+value = 2100
+triggerall = command = "ax"
+triggerall = Alive = 1
+triggerall = var(5) != 0
+triggerall = Pos Y < 0
+
+trigger1 = stateno = 5035
+trigger2 = stateno = 5020
+trigger3 = stateno = 5030
+trigger4 = stateno = 5050
+trigger5 = stateno = 5040
+trigger6 = stateno = 5071
+trigger7 = stateno = 5000
+trigger8 = stateno = 5001
+trigger9 = stateno = 5002
+trigger10 = stateno = 5010
+trigger11 = stateno = 5011
+trigger12 = stateno = 5012
+trigger13 = stateno = 5020
+trigger14 = stateno = 5021
+trigger15 = stateno = 5022
+trigger16 = stateno = 5110
+trigger17 = stateno = 5120
+
+;--------------------------------| Description |----------------------------
+
+;Aerial Kick
+[State -1]
+type = ChangeState
+value = 2100
+triggerall = command = "ax"
+trigger1 = StateType = A
+trigger1 = ctrl = 1
+
+trigger2 = stateno = 610
+trigger2 = movecontact = 1
+
+;--------------------------------| Description |----------------------------
+
+;Charge/Power Up
+[State -1]
+type = ChangeState
+value = 1040
+triggerall = command = "holda"
+triggerall = command = "holdx"
+trigger1 = statetype = S
+trigger1 = ctrl = 1
+trigger2 = stateno = 2000
+
+;------------------------------------------------------------------------------
+;ai charge
+[state -1]
+type = ChangeState
+value = 1041
+triggerall = stateno != 90000
+triggerall = stateno != 1041
+triggerall = p2stateno = 1098
+triggerall = stateno != 3030
+triggerall = command = "ai1"
+trigger1 = statetype = S
+trigger1 = ctrl = 0
+trigger2 = stateno = 2000
+
+;--------------------------------| Description |----------------------------
+
+;Run/Air Dash - Forward
+[State -1]
+type = ChangeState
+value = 100
+trigger1 = command = "FF"
+trigger1 = statetype = S
+trigger1 = ctrl = 1
+
+;--------------------------------| Description |----------------------------
+
+;Run/Air Dash - Backward
+[State -1]
+type = ChangeState
+value = 105
+trigger1 = command = "BB"
+trigger1 = statetype = S
+trigger1 = ctrl = 1
+
+;--------------------------------| Description |----------------------------
+
+;Throw
+[State -1]
+type = ChangeState
+value = 1080
+triggerall = command = "fwd_x"  
+triggerall = p2bodydist X <= 15
+trigger1 = statetype = S
+trigger1 = ctrl = 1
+trigger2 = stateno = 2000
+
+;-----------------------------------------------------------------------------
+prog.
+[State -1]
+type = ChangeState
+value = 700
+triggerall = var(20) != 1
+triggerall = command = "fwd_z"  
+triggerall = p2bodydist X <= 15
+trigger1 = statetype = S
+trigger1 = ctrl = 1
+
+;-----------------------------------------------------------------------------------
+
+;Gigas Stunner
+[State -1]
+type = ChangeState
+value = 1086
+triggerall = p2bodydist X <= 15
+triggerall = (Command = "fwd_y")
+trigger1 = ((StateType = S) && (Ctrl)) || (StateNo = 40) || (StateNo = 52)
+
+;--------------------------------| Description |----------------------------
+
+;Hell's Smash
+[State -1]
+type = ChangeState
+value = 1090
+triggerall = command = "Hell's Smash"
+trigger1 = statetype = S
+trigger1 = ctrl = 1
+trigger2 = stateno = 40         
+trigger3 = stateno = 2000
+
+;--------------------------------| Description |----------------------------
+
+;Hell's Smash - During Combos
+[State -1]
+type = ChangeState
+value = 1090
+triggerall = command = "Hell's Smash"
+triggerall = movecontact = 1
+
+;-------------------------------
+;Combo Triggers for Hell's Smash
+;-------------------------------
+
+trigger1 = stateno = 200         
+trigger2 = stateno = 201         
+trigger3 = stateno = 202         
+trigger4 = stateno = 212         
+trigger5 = stateno = 210         
+trigger6 = stateno = 211       
+trigger7 = stateno = 400         
+trigger8 = stateno = 410         
+trigger9 = stateno = 610        
+trigger9 = time >= 12
+trigger10 = stateno = 2100     
+trigger10 = time >= 12
+trigger11 = stateno = 1020
+trigger11 = time >= 50         
+
+;--------------------------------| Description |----------------------------
+
+;Hell's Smash - Counter
+[State -1]
+type = ChangeState
+value = 1090
+triggerall = command = "Hell's Smash"
+triggerall = var(5) != 0
+triggerall = alive = 1
+trigger1 = statetype = S
+trigger1 = ctrl = 1
+
+trigger1 = stateno >= 150
+trigger2 = Stateno <= 153
+trigger3 = stateno = 5000
+trigger4 = stateno = 5001
+trigger5 = stateno = 5002
+trigger6 = stateno = 5010
+trigger7 = stateno = 5011
+trigger8 = stateno = 5012
+trigger9 = stateno = 5020
+trigger10 = stateno = 5021
+trigger11 = stateno = 5022
+trigger12 = stateno = 5110
+trigger13 = stateno = 5120
+
+;--------------------------------| Description |----------------------------
+
+;Bukuu Jutsu 
+[State -1]
+type = ChangeState
+value = 1999
+triggerall = Var(20) != 1
+triggerall = command = "Bukuu Jutsu"
+trigger1 = !Var(99999)
+trigger1 = statetype = S
+trigger1 = ctrl = 1
+
+;--------------------------------| Description |----------------------------
+
+;Bukuu Jutsu
+[State -1]
+type = ChangeState
+value = 2000
+triggerall = command = "Bukuu Jutsu"
+trigger1 = !Var(99999)
+trigger1 = statetype = A
+trigger1 = ctrl = 1
+
+;--------------------------------| Description |----------------------------
+
+;Kikou Ha
+[State -1]
+type = ChangeState
+value = 1030
+triggerall = command = "Kikou Ha"
+
+trigger1 = statetype = S        
+trigger1 = ctrl = 1              
+
+trigger2 = stateno = 2000      
+
+;--------------------------------| Description |----------------------------
+
+;Instantaneous Movement
+[State -1]
+type = ChangeState
+value = 2001
+triggerall = command = "Instantaneous Movement"
+
+trigger1 = statetype = S       
+trigger1 = ctrl = 1             
+
+trigger2 = stateno = 2000       
+
+;--------------------------------| Description |----------------------------
+
+;Instantaneous Movement - Counter 1
+[State -1]
+type = ChangeState
+value = 2001
+triggerall = command = "Instantaneous Movement"
+triggerall = alive = 1           
+trigger1 = ctrl = 1            
+
+trigger1 = stateno >= 150        
+trigger2 = Stateno <= 153
+
+trigger3 = stateno = 5000        
+trigger4 = stateno = 5001
+trigger5 = stateno = 5002
+trigger6 = stateno = 5010
+trigger7 = stateno = 5011
+trigger8 = stateno = 5012
+trigger9 = stateno = 5020
+trigger10 = stateno = 5021
+trigger11 = stateno = 5022
+trigger12 = stateno = 5110
+trigger13 = stateno = 5120
+trigger14 = stateno = 5110
+trigger15 = stateno = 5035
+trigger16 = stateno = 5030
+trigger17 = stateno = 5050
+trigger18 = stateno = 5040
+trigger19 = stateno = 5071
+
+;--------------------------------| Description |----------------------------
+
+;Instantaneous Movement - Counter 2
+[State -1]
+type = ChangeState
+value = 2001
+triggerall = command = "recovery"
+triggerall = alive = 1           
+triggerall = ctrl = 1         
+
+trigger1 = stateno >= 150        
+trigger2 = Stateno <= 153
+
+trigger3 = stateno = 5000        
+trigger4 = stateno = 5001
+trigger5 = stateno = 5002
+trigger6 = stateno = 5010
+trigger7 = stateno = 5011
+trigger8 = stateno = 5012
+trigger9 = stateno = 5020
+trigger10 = stateno = 5021
+trigger11 = stateno = 5022
+trigger12 = stateno = 5110
+trigger13 = stateno = 5120
+trigger14 = stateno = 5110
+trigger15 = stateno = 5035
+trigger16 = stateno = 5030
+trigger17 = stateno = 5050
+trigger18 = stateno = 5040
+trigger19 = stateno = 5071
+
+;--------------------------------| Description |----------------------------
+
+;Impenetrable Shield
+[State -1]
+type = ChangeState
+value = 2004
+triggerall = Var(20) != 1
+triggerall = command = "holdb"
+triggerall = command = "holdy"
+
+trigger1 = statetype = S       
+trigger1 = ctrl = 1            
+
+trigger2 = stateno = 2000        
+
+trigger3 = stateno >= 150        
+trigger3 = stateno <= 153
+trigger3 = Time >= 20           
+                                
+
+;--------------------------------| Description |----------------------------
+
+;Impenetrable Shield - Counter
+[State -1]
+type = ChangeState
+value = 2004
+triggerall = command = "holdb"
+triggerall = command = "holdy"
+triggerall = Alive = 1
+triggerall = var(5) != 0
+
+trigger1 = stateno = 5035
+trigger2 = stateno = 5020
+trigger3 = stateno = 5030
+trigger4 = stateno = 5050
+trigger5 = stateno = 5040
+trigger6 = stateno = 5071
+trigger7 = stateno = 5000
+trigger8 = stateno = 5001
+trigger9 = stateno = 5002
+trigger10 = stateno = 5010
+trigger11 = stateno = 5011
+trigger12 = stateno = 5012
+trigger13 = stateno = 5020
+trigger14 = stateno = 5021
+trigger15 = stateno = 5022
+trigger16 = stateno = 5110
+trigger17 = stateno = 5120
+
+;--------------------------------| Description |----------------------------
+
+;Smash Down
+[State -1]
+type = ChangeState
+value = 2014
+triggerall = p1name != "broly mode soft"
+triggerall = power >= 10000
+triggerall = command = "Smash Down"
+triggerall = var(5) = 1
+trigger1 = ctrl = 1
+trigger2 = stateno = 2000
+
+trigger3 = stateno >= 150     
+trigger3 = stateno <= 153 
+
+;--------------------------------| Description |----------------------------
+
+;Smash Down
+[State -1]
+type = ChangeState
+value = 2014
+triggerall = p1name != "broly mode soft"
+triggerall = var(20) = 1
+triggerall = command = "Smash Down"
+trigger1 = ctrl = 1
+trigger2 = stateno = 2000
+
+trigger3 = stateno >= 150     
+trigger3 = stateno <= 153           
+
+;--------------------------------| Description |----------------------------
+
+;Smash Down - During Combos
+[State -1]
+type = ChangeState
+value = 2014
+triggerall = var(5) = 1
+triggerall = command = "Smash Down"
+triggerall = movecontact = 1
+triggerall = power >= 5000
+triggerall = p1name != "broly mode soft"
+;-----------------------------
+;Combo Triggers for Smash Down
+;-----------------------------
+
+trigger1 = stateno = 200
+trigger2 = stateno = 201
+trigger3 = stateno = 202
+trigger4 = stateno = 210
+trigger5 = stateno = 211
+trigger6 = stateno = 212
+trigger7 = stateno = 400
+trigger8 = stateno = 410
+trigger9 = stateno = 1010
+trigger10 = stateno = 1020
+trigger11 = stateno = 3000
+
+;===========================================================================
+
+;-| Basic Moves |----------------| Description |----------------------------
+
+;Super Jump
+[State -1]
+type = ChangeState
+value = 70
+triggerall = command = "High Jump"
+trigger1 = statetype != A
+trigger1 = ctrl = 1
+
+;-| Normal Standing Attacks |----| Description |----------------------------
+
+;Strong Punch
+[State -1]
+type = ChangeState
+value = 200
+triggerall = command = "z"
+
+trigger1 = statetype = S
+trigger1 = ctrl = 1              
+trigger1 = command != "holddown"
+
+trigger2 = stateno = 2000        
+
+;--------------------------------| Description |----------------------------
+
+;Strong Punch - During Combos
+[State -1]
+type = ChangeState
+value = 200
+triggerall = command = "z"
+triggerall = command != "holddown"
+triggerall = movecontact = 1
+
+;-------------------------------
+;Combo Triggers for Strong Punch
+;-------------------------------
+
+trigger1 = stateno = 201         
+trigger2 = stateno = 202         
+trigger3 = stateno = 210         
+trigger4 = stateno = 211         
+trigger5 = stateno = 400         
+trigger6 = stateno = 410         
+
+;--------------------------------| Description |----------------------------
+
+;Strong Punch - Alternate Y
+[State -1]
+type = ChangeState
+value = 200
+triggerall = command = "y"         
+triggerall = command != "holddown"
+trigger1 = movecontact = 1
+trigger1 = stateno = 202         
+trigger1 = movecontact = 1       
+
+;--------------------------------| Description |----------------------------
+
+;Weak Punch
+[State -1]
+type = ChangeState
+value = 201
+triggerall = command = "x"
+
+trigger1 = command != "holddown"
+trigger1 = statetype = S         
+trigger1 = ctrl = 1
+
+trigger2 = stateno = 2000        
+
+;--------------------------------| Description |----------------------------
+
+;Medium Punch
+[State -1]
+type = ChangeState
+value = 202
+triggerall = command = "y"
+
+trigger1 = command != "holddown" 
+trigger1 = statetype = S       
+trigger1 = ctrl = 1              
+
+trigger2 = stateno = 2000        
+
+;--------------------------------| Description |----------------------------
+
+;Medium Punch - During Combos
+[State -1]
+type = ChangeState
+value = 202
+triggerall = command = "y"
+triggerall = command != "holddown" 
+triggerall = movecontact = 1
+
+;-------------------------------
+;Combo Triggers for Meduim Punch
+;-------------------------------
+
+trigger1 = stateno = 201       
+trigger2 = stateno = 202         
+trigger3 = stateno = 210         
+trigger4 = stateno = 211         
+trigger5 = stateno = 400         
+trigger6 = stateno = 410         
+
+;--------------------------------| Description |----------------------------
+
+;Medium Punch - Alternate X
+[State -1]
+type = ChangeState
+value = 202
+triggerall = command = "x"         
+triggerall = command != "holddown"
+
+trigger1 = stateno = 201        
+trigger1 = movecontact = 1       
+
+;--------------------------------| Description |----------------------------
+
+;Medium Kick
+[State -1]
+type = ChangeState
+value = 210
+triggerall = command = "b"
+
+trigger1 = command != "holddown"
+trigger1 = statetype = S       
+trigger1 = ctrl = 1
+
+trigger2 = stateno = 2000       
+
+;--------------------------------| Description |----------------------------
+
+Medium Kick - During Combos
+[State -1]
+type = ChangeState
+value = 210
+triggerall = command = "b"
+triggerall = command != "holddown"
+triggerall = movecontact = 1
+
+;------------------------------
+;Combo Triggers for Medium Kick
+;------------------------------
+
+trigger1 = stateno = 201        
+trigger2 = stateno = 202       
+trigger3 = stateno = 211         
+trigger4 = stateno = 400        
+trigger5 = stateno = 410         
+
+;--------------------------------| Description |----------------------------
+
+;Medium Kick - Alternate A
+[State -1]
+type = ChangeState
+value = 210
+triggerall = command = "a"          
+triggerall = command != "holddown"
+
+trigger1 = stateno = 211         
+trigger1 = movecontact = 1       
+
+;--------------------------------| Description |----------------------------
+
+
+;Weak Kick
+[State -1]
+type = ChangeState
+value = 211
+triggerall = command = "a"
+
+trigger1 = command != "holddown"
+trigger1 = statetype = S       
+trigger1 = ctrl = 1
+
+trigger2 = command != "holddown"
+trigger2 = stateno = 201       
+trigger2 = movecontact = 1     
+
+trigger3 = stateno = 2000
+
+;--------------------------------| Description |----------------------------
+
+;Strong Kick
+[State -1]
+type = ChangeState
+value = 212
+triggerall = command = "c"
+
+trigger1 = command != "holddown"
+trigger1 = statetype = S         
+trigger1 = ctrl = 1
+
+trigger2 = stateno = 2000       
+
+;--------------------------------| Description |----------------------------
+
+;Strong Kick - During Combos
+[State -1]
+type = ChangeState
+value = 212
+triggerall = command = "c"
+triggerall = command != "holddown"
+triggerall = movecontact = 1
+
+;------------------------------
+;Combo Triggers for Strong Kick
+;------------------------------
+
+trigger1 = stateno = 200       
+trigger2 = stateno = 201        
+trigger3 = stateno = 202         
+trigger4 = stateno = 210        
+trigger5 = stateno = 211         
+trigger6 = stateno = 400         
+trigger7 = stateno = 410         
+
+;--------------------------------| Description |----------------------------
+
+;Strong Kick - Alternate B
+[State -1]
+type = ChangeState
+value = 212
+triggerall = command = "b"         
+triggerall = command != "holddown"
+
+trigger1 = stateno = 210         
+trigger1 = movecontact = 1      
+
+;-| Normal Crouching Attacks |---| Description |----------------------------
+
+;Crouch Punch 
+[State -1]
+type = ChangeState
+value = 400
+triggerall = command = "holddown"  
+triggerall = statetype = C
+trigger1 = ctrl = 1
+
+trigger1 = command = "x"         
+trigger2 = command = "y"
+trigger3 = command = "z"
+
+;--------------------------------| Description |----------------------------
+
+;Crouch Punch X - During Combos
+[State -1]
+type = ChangeState
+value = 400
+triggerall = command = "x"
+triggerall = command = "holddown"
+triggerall = movecontact = 1
+triggerall = time >= 7
+
+;---------------------------------
+;Combo Triggers for Crouch Punch X
+;---------------------------------
+
+trigger1 = stateno = 200         
+trigger2 = stateno = 201         
+trigger3 = stateno = 202        
+trigger4 = stateno = 210        
+trigger5 = stateno = 211         
+trigger6 = stateno = 212         
+trigger7 = stateno = 400        
+trigger8 = stateno = 410         
+
+;--------------------------------| Description |----------------------------
+
+;Crouch Punch Y - During Combos
+[State -1]
+type = ChangeState
+value = 400
+triggerall = command = "y"
+triggerall = command = "holddown"
+triggerall = movecontact = 1
+triggerall = time >= 7
+
+;---------------------------------
+;Combo Triggers for Crouch Punch Y
+;---------------------------------
+
+trigger1 = stateno = 200         
+trigger2 = stateno = 201         
+trigger3 = stateno = 202         
+trigger4 = stateno = 210         
+trigger5 = stateno = 211         
+trigger6 = stateno = 212       
+trigger7 = stateno = 400        
+trigger8 = stateno = 410         
+
+;--------------------------------| Description |----------------------------
+
+;Crouch Punch Z - During Combos
+[State -1]
+type = ChangeState
+value = 400
+triggerall = command = "z"
+triggerall = command = "holddown"
+triggerall = movecontact = 1
+triggerall = time >= 7
+
+;---------------------------------
+;Combo Triggers for Crouch Punch Z
+;---------------------------------
+
+trigger1 = stateno = 200        
+trigger2 = stateno = 201        
+trigger3 = stateno = 202        
+trigger4 = stateno = 210       
+trigger5 = stateno = 211      
+trigger6 = stateno = 212      
+trigger7 = stateno = 400        
+trigger8 = stateno = 410        
+
+;--------------------------------| Description |----------------------------
+
+;Crouch Kick
+[State -1]
+type = ChangeState
+value = 410
+
+triggerall = command = "holddown"
+triggerall = statetype = C
+trigger1 = ctrl = 1
+
+trigger1 = command = "a"
+trigger2 = command = "b"
+trigger3 = command = "c"
+
+;--------------------------------| Description |----------------------------
+
+;Crouch Kick A - During Combos
+[State -1]
+type = ChangeState
+value = 410
+
+triggerall = command = "a"
+triggerall = command = "holddown"
+triggerall = movecontact = 1
+triggerall = time >= 7
+
+;--------------------------------
+;Combo Triggers for Crouch Kick A
+;--------------------------------
+
+trigger1 = stateno = 200       
+trigger2 = stateno = 201        
+trigger3 = stateno = 202      
+trigger4 = stateno = 210     
+trigger5 = stateno = 211       
+trigger6 = stateno = 212        
+trigger7 = stateno = 400         
+trigger8 = stateno = 410         
+
+;--------------------------------| Description |----------------------------
+
+;Crouch Kick B - During Combos
+[State -1]
+type = ChangeState
+value = 410
+
+triggerall = command = "b"
+triggerall = command = "holddown"
+triggerall = movecontact = 1
+triggerall = time >= 7
+
+;--------------------------------
+;Combo Triggers for Crouch Kick B
+;--------------------------------
+
+trigger1 = stateno = 200        
+trigger2 = stateno = 201       
+trigger3 = stateno = 202    
+trigger4 = stateno = 210    
+trigger5 = stateno = 211      
+trigger6 = stateno = 212     
+trigger7 = stateno = 400      
+trigger8 = stateno = 410       
+
+;--------------------------------| Description |----------------------------
+
+;Crouch Kick C - During Combos
+[State -1]
+type = ChangeState
+value = 410
+
+triggerall = command = "c"
+triggerall = command = "holddown"
+triggerall = movecontact = 1
+triggerall = time >= 7
+
+;--------------------------------
+;Combo Triggers for Crouch Kick C
+;--------------------------------
+
+trigger1 = stateno = 200       
+trigger2 = stateno = 201      
+trigger3 = stateno = 202      
+trigger4 = stateno = 210     
+trigger5 = stateno = 211    
+trigger6 = stateno = 212       
+trigger7 = stateno = 400        
+trigger8 = stateno = 410       
+
+;-| Normal Jump Attacks |--------| Description |----------------------------
+
+;Jump Kick
+[State -1]
+type = ChangeState
+value = 610
+
+triggerall = statetype = A
+triggerall = ctrl = 1
+
+trigger1 = command = "a"
+trigger2 = command = "b"
+trigger3 = command = "c"
+trigger4 = command = "x"
+trigger5 = command = "y"
+trigger6 = command = "z"
+
+;--------------------------------| Description |----------------------------
+
+;Jump Kick X - During Combos
+[State -1]
+type = ChangeState
+value = 610
+
+triggerall = command = "x"
+triggerall = command = "holddown"
+triggerall = movecontact = 1
+triggerall = time >= 5
+
+;------------------------------
+;Combo Triggers for Jump Kick X
+;------------------------------
+
+trigger1 = stateno = 610
+
+;--------------------------------| Description |----------------------------
+
+;Jump Kick Y - During Combos
+[State -1]
+type = ChangeState
+value = 610
+
+triggerall = command = "y"
+triggerall = command = "holddown"
+triggerall = movecontact = 1
+triggerall = time >= 5
+
+;------------------------------
+;Combo Triggers for Jump Kick Y
+;------------------------------
+
+trigger1 = stateno = 610
+
+;--------------------------------| Description |----------------------------
+
+;Jump Kick Z - During Combos
+[State -1]
+type = ChangeState
+value = 610
+
+triggerall = command = "z"
+triggerall = command = "holddown"
+triggerall = movecontact = 1
+triggerall = time >= 5
+
+;------------------------------
+;Combo Triggers for Jump Kick Z
+;------------------------------
+
+trigger1 = stateno = 610
+
+;--------------------------------| Description |----------------------------
+
+;Jump Kick A - During Combos
+[State -1]
+type = ChangeState
+value = 610
+
+triggerall = command = "a"
+triggerall = command = "holddown"
+triggerall = movecontact = 1
+triggerall = time >= 5
+
+;------------------------------
+;Combo Triggers for Jump Kick A
+;------------------------------
+
+trigger1 = stateno = 610
+
+;--------------------------------| Description |----------------------------
+
+;Jump Kick B - During Combos
+[State -1]
+type = ChangeState
+value = 610
+
+triggerall = command = "b"
+triggerall = command = "holddown"
+triggerall = movecontact = 1
+triggerall = time >= 5
+
+;------------------------------
+;Combo Triggers for Jump Kick B
+;------------------------------
+
+trigger1 = stateno = 610
+
+;--------------------------------| Description |----------------------------
+
+;Jump Kick C - During Combos
+[State -1]
+type = ChangeState
+value = 610
+
+triggerall = command = "c"
+triggerall = command = "holddown"
+triggerall = movecontact = 1
+triggerall = time >= 5
+
+;------------------------------
+;Combo Triggers for Jump Kick C
+;------------------------------
+
+trigger1 = stateno = 610
+
+;-----------------------------------------------------------------------------------
+;Taunt
+[State -1, Taunt]
+type = ChangeState
+value = 195
+triggerall = Var(20) != 1
+triggerall = command = "s"
+trigger1 = statetype != A
+trigger1 = ctrl
+
+;-----------------------------------------------------------------------------------
+
+
+

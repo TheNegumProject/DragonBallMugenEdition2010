@@ -1,0 +1,286 @@
+
+[Statedef 8000]
+type = S
+anim = 7506
+sprpriority = 7
+supermove = 1
+supermovetime = 15
+pausemovetime = 15
+
+[State -2, HitSparks Randômicos]
+type = VarRandom
+trigger1 = 1
+v = 8
+range = 1,5
+
+[State 8000, sem sombra]
+type = AssertSpecial
+trigger1 = 1
+flag = noshadow
+
+[State 8000, HitSpark randômico]
+type = Explod
+trigger1 = !Time
+anim = 7500 + var(8)
+ID = 7500
+pos = 10,-10
+scale = 1,1
+sprpriority = 9
+ignorehitpause = 1
+supermove = 1
+supermovetime = 10
+pausemovetime = 10
+
+[State 8000, HitSpark randômico]
+type = Explod
+trigger1 = !Time
+anim = 7500
+ID = 7500
+pos = 10,-10
+scale = 1,1
+sprpriority = 9
+ignorehitpause = 1
+supermove = 1
+supermovetime = 10
+pausemovetime = 10
+
+[State 8000, AfterImage]
+type = AfterImage
+trigger1 = time = 0
+time = 200
+trans = add
+TimeGap = 1
+FrameGap = 2
+length = 60
+PalBright = 0, 0, 0
+PalContrast = 100,100,100
+PalAdd = 0, 0, 0
+PalMul = 0, 0, 0
+
+[State 8000, fim]
+type = DestroySelf
+trigger1 = Animtime = 0
+
+[Statedef 8001]
+type = S
+anim = 7506
+sprpriority = 7
+supermove = 1
+supermovetime = 15
+pausemovetime = 15
+
+[State 8000, sem sombra]
+type = AssertSpecial
+trigger1 = 1
+flag = noshadow
+
+[State 8000, HitSpark randômico]
+type = Explod
+trigger1 = !Time
+anim = 7500 + var(8)
+ID = 7500
+pos = 7,-10
+scale = 1,1
+sprpriority = 9
+ignorehitpause = 1
+supermove = 1
+supermovetime = 10
+pausemovetime = 10
+
+[State 8000, AfterImage]
+type = AfterImage
+trigger1 = time = 0
+time = 200
+trans = add
+TimeGap = 1
+FrameGap = 2
+length = 60
+PalBright = 0, 0, 0
+PalContrast = 100,100,100
+PalAdd = 0, 0, 0
+PalMul = 0, 0, 0
+
+[State 8000, fim]
+type = DestroySelf
+trigger1 = Animtime = 0
+
+[Statedef 8002]
+type = S
+anim = 7506
+sprpriority = 7
+supermove = 1
+supermovetime = 15
+pausemovetime = 15
+
+[State 8000, sem sombra]
+type = AssertSpecial
+trigger1 = 1
+flag = noshadow
+
+[State 8000, HitSpark randômico]
+type = Explod
+trigger1 = !Time
+anim = 7504 + var(8)
+ID = 7504
+pos = 7,-20
+scale = 1,1
+sprpriority = 9
+ignorehitpause = 1
+supermove = 1
+supermovetime = 10
+pausemovetime = 10
+
+[State 8000, HitSpark randômico]
+type = Explod
+trigger1 = !Time
+anim = 7500
+ID = 7500
+pos = 10,-10
+scale = 1,1
+sprpriority = 9
+ignorehitpause = 1
+supermove = 1
+supermovetime = 10
+pausemovetime = 10
+
+[State 8000, AfterImage]
+type = AfterImage
+trigger1 = time = 0
+time = 200
+trans = add
+TimeGap = 1
+FrameGap = 2
+length = 60
+PalBright = 0, 0, 0
+PalContrast = 100,100,100
+PalAdd = 0, 0, 0
+PalMul = 0, 0, 0
+
+[State 8000, fim]
+type = DestroySelf
+trigger1 = Animtime = 0
+
+[Statedef 8003]
+type = S
+anim = 7506
+sprpriority = 7
+supermove = 1
+supermovetime = 15
+pausemovetime = 15
+
+[State 8000, sem sombra]
+type = AssertSpecial
+trigger1 = 1
+flag = noshadow
+
+[State 8000, HitSpark randômico]
+type = Explod
+trigger1 = !Time
+anim = 7500 + var(8)
+ID = 7500
+pos = 7,10
+scale = 1,1
+sprpriority = 9
+ignorehitpause = 1
+supermove = 1
+supermovetime = 10
+pausemovetime = 10
+
+[State 8000, HitSpark randômico]
+type = Explod
+trigger1 = !Time
+anim = 7501
+ID = 7501
+pos = 7,10
+scale = 1,1
+sprpriority = 9
+ignorehitpause = 1
+supermove = 1
+supermovetime = 10
+pausemovetime = 10
+
+[State 8000, HitSpark randômico]
+type = Explod
+trigger1 = !Time
+anim = 7500
+ID = 7500
+pos = 10,-10
+scale = 1,1
+sprpriority = 9
+ignorehitpause = 1
+supermove = 1
+supermovetime = 10
+pausemovetime = 10
+
+[State 8000, HitSpark randômico]
+type = Explod
+trigger1 = !Time
+anim = 7502 + var(8)
+ID = 7502
+pos = 7,10
+scale = 1,1
+sprpriority = 9
+removetime = 14
+ignorehitpause = 1
+supermove = 1
+supermovetime = 10
+pausemovetime = 10
+
+[State 8000, HitSpark randômico]
+type = Explod
+trigger1 = !Time
+anim = 7503 + var(8)
+ID = 7503
+pos = 7,10
+scale = 1,1
+sprpriority = 9
+removetime = 14
+ignorehitpause = 1
+supermove = 1
+supermovetime = 10
+pausemovetime = 10
+
+[State 8000, HitSpark randômico]
+type = Explod
+trigger1 = !Time
+anim = 7504 + var(8)
+ID = 7504
+pos = 7,10
+scale = 1,1
+sprpriority = 9
+ignorehitpause = 1
+supermove = 1
+supermovetime = 10
+pausemovetime = 10
+
+[State 8000, HitSpark randômico]
+type = Explod
+trigger1 = !Time
+anim = 7505 + var(8)
+ID = 7505
+pos = 7,10
+scale = 1,1
+sprpriority = 9
+ignorehitpause = 1
+supermove = 1
+supermovetime = 10
+pausemovetime = 10
+
+[State 8000, AfterImage]
+type = AfterImage
+trigger1 = time = 0
+time = 200
+trans = add
+TimeGap = 1
+FrameGap = 2
+length = 60
+PalBright = 0, 0, 0
+PalContrast = 100,100,100
+PalAdd = 0, 0, 0
+PalMul = 0, 0, 0
+
+[State 8000, fim]
+type = DestroySelf
+trigger1 = Animtime = 0
+
+;----------------------------------------

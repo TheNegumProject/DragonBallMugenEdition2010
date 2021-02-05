@@ -1,0 +1,40 @@
+
+[Info]
+;the nightmare SSJ3 est le remix autorisé de the nightmare (kakaroto) 
+;qui est un édit de broly
+;commencé le 11 septembre 2004
+;ultime retouche avant changement de sprite du perso
+;------------------------------------------------------
+name = "Broly 'le cauchemar' super saiyen nv3" 
+displayname = "Nightmare Broli"       
+versiondate = 14.01.2007   
+mugenversion = 06.27.2000   
+author = "gulthor"          
+Pal.Defaults=1,2
+;------------------------------------------------------
+
+[Files]
+
+cmd     = thenightmareSSJ3.SSJ3                                    
+cns     = thenightmareSSJ3.cns 
+stcommon= thenightmareSSJ3.cns                            
+st      = thenightmareSSJ3.cns 
+st1     = thenightmareSSJ3.cns   
+st2     = thenightmareSSJ3.cns
+st3     = thenightmareSSJ3.cns
+st4     = thenightmareSSJ3.cns
+st5     = vs.sephi.cns
+sprite  = thenightmareSSJ31.sff                      
+anim    = thenightmareSSJ31.air         
+sound   = thenightmareSSJ3.snd         
+pal1= thenightmareSSJ3.act
+pal2= thenightmareSSJ31.act
+;pal3= thenightmareSSJ32.act
+;pal4= thenightmareSSJ33.act
+;pal5= thenightmareSSJ34.act
+
+;arcade mode
+[arcade]
+intro.storyboard = 
+ending.storyboard = 
+

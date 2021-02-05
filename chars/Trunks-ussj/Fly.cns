@@ -1,0 +1,210 @@
+;Volar Inicio
+;---------------------------------------------------------------------------;
+[Statedef 3115] ;ESTADO DEL CNS
+type = A ; TIPO DE MOVIMIENTO (A SIGNIFICA EN EL AIRE)
+movetype = A ; EL TIPO DE MOVIMIENTO (A SIGNIFICA ATAQUE)
+physics = A
+velset = 0,-10,0 
+Anim = 3115 ;ANIMACION EN EL AIR
+poweradd= 70 ; PODER QUE ATQUIERES
+ctrl = 0 ; CONTROL QUE TENEMOS
+
+[State 621, 3]
+type = playsnd ;LLAMA UNH SONIDO
+trigger1 = time = 2 ; TIEMPO QUE TARDA
+value = 0,2 ; VALOR DEL SONIDO ( EL PRIMERO (0) INDICA EL GRUPO, EL SEGUNDO (2) EL NUMERO DEL SONIDO
+
+[State 1020, Afterimage]
+type = AfterImage ;LLAMA A UNA IMAGEN DETRAS DE LA PRIMERA
+trigger1 = Time = 0 
+length = 20
+PalBright   =  60, 60, 60
+PalContrast =  70, 70, 70
+PalAdd      = -10,-10,-10
+PalMul      = .85,.85,.85
+TimeGap  = 1
+FrameGap = 2
+Trans = Add
+time = 30
+
+[State 1800, 4]
+type=ChangeState ;LLAMA A UN ESTADO
+trigger1=AnimTime=0 ; TIEMPO EN QUE LO LLAMA(ANIMTIME=0 SIGNIFICA ;YA KE TERMINE LA ANIMACION COMPLETA)
+value=3001 ;VALOR DEL ESTADO
+ctrl=1 ; CONTROL QUE TENEMOS
+
+; Volando
+;---------------------------------------------------------------------------;
+[Statedef 3001]
+type = A ;TIPO EN EL AIRE
+ctrl = 0 ; NO TENEMOS CONTROL
+movetype = A 
+anim = 3001 ; ANIMACION DEL AIR
+velset = 0,0,0
+
+[State 3001,Para]
+type = VelSet ; CAMBIO DE POCICION DEL SET
+trigger1 = command != "holdfwd" ; COMANDOS A UTILIZAR
+trigger1 = command != "holdback"
+trigger1 = command != "holdup"
+trigger1 = command != "holddown"
+trigger1 = Var(2) = 0 ; VARIANTE QUE SE  UTILIZA( DESACTIVADA)
+x = 0
+y = 0
+
+[State 3001, Para2]
+type = ChangeAnim ; BUSCAR ANIMACION
+triggerall = Var(9) = 0 ; VARIANTE 9 DESACTIVADA
+trigger1 = command != "holdup" ;COMANDO ADELANTE
+trigger1 = command != "holddown" ;COMANDO HACIA ATRAS
+trigger1 = Anim != 3001 ;ANIMACION QUEBUSCAMOS
+value = 3001 ;VALOR DE  LA ANIMACION
+
+[State 3001,Var(1)]
+type = VarSet
+trigger1 = command != "holdfwd"
+trigger1 = command != "holdback"
+trigger1 = command != "holdup"
+trigger1 = command != "holddown"
+trigger1 = Var(2) != 2 ; VARIABLE ACTIVADA
+trigger2 = Var(2) = 2
+trigger2 = Vel Y >= 2.4 ; VELOCIDAD Y
+v = 2
+value = 1
+
+[State 3001,Var(2)]
+type = VarSet ;VARIANTE DEL SET
+trigger1 = Var(2) = 1 ; VARIANTE ACTIVADA
+trigger1 = Vel Y <= -2.4 
+v = 2
+value = 2
+
+[State 3001,Up] ; ESTADO PARA SUBIR
+type = VelAdd ; AÑADIR VELOCIDAD
+trigger1 = Var(2) = 1 ; VARIANTE 2 ACTIVADA
+y = -0.2 ; VELOCIDAD A LA QUE SUBE
+
+[State 3001,Down] ; ESTADO PARA BAJAR
+type = VelAdd
+trigger1 = Var(2) = 2
+y = 0.2 ; VELOCIDAD EN LA QUE BAJA
+
+[State 3001,End] ;ESTADO PARA TERMINAR
+type = VelSet
+triggerall = Var(2) != 0 ;VARIANTE DESACTIVADA
+trigger1 = command = "holdfwd"
+trigger2 = command = "holdback"
+trigger3 = command = "holdup"
+trigger4 = command = "holddown"
+y = 0 
+
+[State 3001,EndVar]
+type = VarSet
+trigger1 = command = "holdfwd"
+trigger2 = command = "holdback"
+trigger3 = command = "holdup"
+trigger4 = command = "holddown"
+v = 2
+value = 0
+
+[State 3001, GoUp1] ; IRA PARA ARRIBA
+type = VelAdd
+trigger1 = command = "holdup" ;COMANDO QUE USAMOS
+y = -0.4
+
+[State 3001,GoUp2]
+type = VelSet
+trigger1 = command = "holdup"
+trigger1 = Vel Y > 0
+y = 0
+
+[State 3001, GoUpAnim];ANIMACION PARA SUBIR
+type = ChangeAnim
+trigger1 = Anim != 3001 && command = "holdup";INDICA LA ANIMACION Y EL ;COMANDO QUE UTILIZA PARA ACTIVARLA
+trigger2 = Var(59) = 1 && Vel Y > 1 && Anim != 3001
+value = 3001
+
+[State 3001, GoDown1];IRA HACIA ABAJO
+type = VelAdd
+trigger1 = command = "holddown"
+y = 0.4
+
+[State 3001,GoDown2]
+type = VelSet
+trigger1 = command = "holddown"
+trigger1 = Vel Y < 0
+y = 0
+
+[State 3001, GoDownAnim];ANIMACION PARA ABAJO
+type = ChangeAnim
+trigger1 = Anim != 3001 && command = "holddown"
+trigger2 = Var(59) = 1 && Vel Y < 1 && Anim != 3001
+value = 3001
+
+[State 3001, GoBack1] ;IR PARA ATRAS
+type = VelAdd
+trigger1 = command = "holdback"
+x = -0.4
+
+[State 3001,GoBack2]
+type = VelSet
+trigger1 = command = "holdback"
+trigger1 = Vel X > 0
+x = 0
+
+[State 3001, GoBackAnim];ANIMACION DE IR PARA ATRAS
+type = ChangeAnim
+trigger1 = Anim != 21 && command = "holdback"
+trigger2 = Var(59) = 1 && Vel X < 0 && Anim !=21
+value = 3113
+
+[State 3001, GoFwd1];IR ADELANTE
+type = VelAdd
+trigger1 = command = "holdfwd"
+x = 0.4
+
+[State 3001, GoFwd2]
+type = VelSet
+trigger1 = command = "holdfwd"
+trigger1 = Vel X < 0
+x = 0
+
+[State 3001, GoFwdAnim];ANIMACION DE IR ADELANTE
+type = ChangeAnim
+trigger1 = Anim != 20&& command = "holdfwd"
+trigger2 = Var(59) = 1 && Vel X > 0 && Anim != 20
+value = 3112
+
+[State 3001,Turn];VOLTEARSE
+type = Turn ; LE DICE QUE TURNE LA IMAGEN O LA VOLTEE SEGUN LA ;POSICION DEL P2
+trigger1 = P2bodydist X < -29;INDICA LA DISTANCIA DEL P2
+
+[State 3001,Borda]
+type = PosSet
+trigger1 = Pos Y < -400
+y = -400
+
+[State 3001,A.I.]
+type = VelSet
+trigger1 = Var(59) = 1 && Pos Y < -20
+x = p2bodydist x / 10
+y = p2bodydist y / 10
+
+[State 2100, Land2]
+type = ChangeState
+trigger1 = Pos Y >= 0
+value = 52
+ctrl = 1
+
+[State 3001,End];TERMINAR 
+type = ChangeState
+trigger1 = Time > 2
+trigger1 = command = "Volar"
+value = 50
+ctrl = 1
+
+[State 3001,Win-Lose];SI PIERDES EN EL AIRE O GANAS
+type = ChangeState
+trigger1 = Win = 1
+trigger2 = Lose = 1
+value = 50

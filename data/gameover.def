@@ -1,0 +1,31 @@
+;DRAGONBALL SUPER SAIYANS
+;by SuperVegito (aka Mushfique Junayed Khurshid)
+;EMAIL: mushfiquejk@yahoo.com MSN: mushfiquejk@hotmail.com
+
+
+
+
+
+
+[SceneDef]
+spr = gameover.sff
+
+;------------------------------------
+; Display "Game Over" animation
+[Scene 0]
+bgm = gameover.mp3
+bgm.loop = 0
+fadein.time = 30
+fadeout.time = 100
+fadein.col = 0, 0, 0
+fadeout.col = 0,0,0
+clearcolor = 0,0,0
+layerall.pos = 0,0
+layer0.anim =  0
+layer0.starttime = 0
+end.time = 400
+
+;------------------------------------
+;Animation for Game Over
+[Begin Action 0]
+0,0,0,0,500

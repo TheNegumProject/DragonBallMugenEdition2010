@@ -1,0 +1,187 @@
+[Statedef 5500,0]
+type=S
+movetype=I
+physics=S
+juggle=9
+velset=0,0
+ctrl=0
+poweradd=0
+facep2=1
+
+[State 1000,ChangeAnim]
+type=ChangeAnim
+trigger1=!Time
+value=5500
+
+[State 1000,Envcolor]
+type=Envcolor
+trigger1=animelem=2
+time=20
+
+[State 1000,Poweradd]
+type = Poweradd
+trigger1 = Time>=12
+value = 12
+
+[State 210, 1]
+type = PlaySnd
+trigger1 = Time = 0
+value = 835, 0
+
+[State 210, 1]
+type = PlaySnd
+trigger1 = animelem = 2
+value = 830, 0
+
+[State 1000,ki]
+type=PlaySnd
+trigger1 = TimeMod = 23,14
+value=840,0
+
+[State 1000,aura]
+type=Explod
+trigger1=animelem=1
+anim=5505
+id=5505
+pos=-3,0
+postype=p1
+facing=1
+vfacing=1
+bindtime=-1
+vel=0,0
+accel=0,0
+random=0,0
+removetime=-1
+scale=1,1
+sprpriority=3
+ontop=1
+shadow=0,0,0
+ownpal=0
+removeongethit=1
+
+[State 1000,remover aura]
+type=RemoveExplod
+id=5505
+trigger1=(command != "charge") || (command != "charge 1") || (life = 0) || stateno != 5500
+
+[State 1000,aura]
+type=Explod
+trigger1=animelem=1
+anim=7600
+id=7600
+pos=-25,-20
+postype=p1
+facing=1
+vfacing=1
+bindtime=-1
+vel=0,0
+accel=0,0
+random=0,0
+removetime=30
+scale=0.3,0.3
+sprpriority=3
+ontop=1
+shadow=0,0,0
+ownpal=0
+removeongethit=1
+
+[State 1000,aura]
+type=Explod
+trigger1= timemod = 15,19
+anim=7620
+id=7620
+pos=-25,-20
+postype=p1
+facing=1
+vfacing=1
+bindtime=-1
+vel=0,0
+accel=0,0
+random=0,0
+removetime=15
+scale=0.6,0.6
+sprpriority=3
+ontop=1
+shadow=0,0,0
+ownpal=0
+removeongethit=1
+
+[State 1000,aura]
+type=Explod
+trigger1=animelem=2
+anim=7615
+id=7615
+pos=0,0
+postype=p1
+facing=1
+vfacing=1
+bindtime=-1
+vel=0,0
+accel=0,0
+random=0,0
+removetime=55
+scale=1.5,1.5
+sprpriority=3
+ontop=1
+shadow=0,0,0
+ownpal=0
+removeongethit=1
+
+[State 1000,aura]
+type=Explod
+trigger1=animelem=2
+anim=7605
+id=7605
+pos=0,0
+postype=p1
+facing=1
+vfacing=1
+bindtime=-1
+vel=0,0
+accel=0,0
+random=0,0
+removetime=-1
+scale=0.6,0.6
+sprpriority=3
+ontop=1
+shadow=0,0,0
+ownpal=0
+removeongethit=1
+
+[State 1000,remover aura]
+type=RemoveExplod
+id=7605
+trigger1=(command != "charge") || (command != "charge 1") || (life = 0) || stateno != 5500
+
+[State 1000,aura]
+type=Explod
+trigger1=animelem=2
+anim=7610
+id=7610
+pos=0,0
+postype=p1
+facing=1
+vfacing=1
+bindtime=-1
+vel=0,0
+accel=0,0
+random=0,0
+removetime=-1
+scale=0.6,0.6
+sprpriority=3
+ontop=1
+shadow=0,0,0
+ownpal=0
+removeongethit=1
+
+[State 1000,remover aura]
+type=RemoveExplod
+id=7610
+trigger1=(command != "charge") || (command != "charge 1") || (life = 0) || stateno != 5500
+
+[State 730, 5]
+type = ChangeState
+trigger1 = command != "charge"
+trigger2 = command != "charge 1"
+value = 0
+ctrl = 1

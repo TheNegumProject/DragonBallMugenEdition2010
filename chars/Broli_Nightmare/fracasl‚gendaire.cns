@@ -1,0 +1,403 @@
+;-----------------------------------------------------------------------------------------
+;l'ultime fracas légendaire (attaque SSJ5)
+[statedef 4300]
+Type    = A
+movetype= A
+physics = S
+anim = 4300
+velset = 0,0
+ctrl = 0
+
+[State 4300]
+Type = Turn
+Trigger1 = P2Dist X < 0
+
+[State 4300]
+type = PosAdd
+trigger1 = time = 0
+x = p2bodydist x + 70  
+y = p2bodydist y + 1
+
+[state 4300]
+type = playsnd
+trigger1 = time = 0
+value = 20,8
+volume = 255
+
+[state 4300]
+type = superpause
+trigger1 = animelem = 1
+time = 35
+anim = -1
+movtime = 50
+
+[state 4300]
+type = HitDef
+trigger1 = AnimElem = 4
+attr = S, NA
+animtype  = hard
+damage    = 6
+hitflag = MAFP
+guardflag = MA
+pausetime = 15,11
+sparkno = s19999
+guard.sparkno	= S29999
+;sparkxy = -10,-70
+getpower = 0
+givepower = 0
+hitsound = S5, 29
+guardsound = S20, 3
+ground.type = Trip
+ground.slidetime = 12
+ground.hittime  = 15
+ground.velocity = -3,-4.5
+air.velocity = -2.2,-3.2
+p2stateno = 4301
+fall = 1
+fall.recover = 0
+
+[state 4300]
+type = changestate
+trigger1 = animtime = 0
+value = 4302
+ctrl = 1
+
+;----------------------------------------------------------------------------------------
+;position du deuxième player
+[statedef 4301]
+type    = S
+movetype= H
+physics = N
+velset = 0,-10
+
+[State 4301]
+type = ChangeAnim2
+trigger1 = Time = 0
+value = 6000
+
+[State 4301]
+type = changestate
+trigger1 = Time = 350
+value = 4311
+supermovetime = 99999
+pausemovetime = 99999
+
+;----------------------------------------------------------------------------------------
+
+[statedef 4311]
+type    = S
+movetype= H
+physics = N
+velset = 0,0
+supermovetime = 99999
+pausemovetime = 99999
+sprpriority = 103
+
+[State 4302]
+Type = Turn
+Trigger1 = P2Dist X < 0
+
+[State 4311]
+type = ChangeAnim2
+trigger1 = Time = 0
+value = 6000
+
+[state 4311]
+type = posadd
+trigger1 = time = 0
+x = p2bodydist x + 70  
+y = p2bodydist y + 1
+
+[State 4311]
+type = changestate
+trigger1 = Time = 500
+value = 40
+ctrl = 1
+
+;----------------------------------------------------------------------------------------
+
+[statedef 4312]
+type    = S
+movetype= H
+physics = N
+velset = 0,0
+supermovetime = 99999
+pausemovetime = 99999
+
+[State 4302]
+Type = Turn
+Trigger1 = P2Dist X < 0
+
+[State 4311]
+type = ChangeAnim2
+trigger1 = Time = 0
+value = 6000
+
+[State 4311]
+type = changestate
+trigger1 = Time = 500
+value = 40
+ctrl = 1
+
+;----------------------------------------------------------------------------------------
+
+[statedef 4313]
+type    = S
+movetype= H
+physics = N
+velset = 0,15
+supermovetime = 99999
+pausemovetime = 99999
+sprpriority = 103
+
+[State 4302]
+Type = Turn
+Trigger1 = P2Dist X < 0
+
+[state 4311]
+type = posadd
+trigger1 = time = 0
+x = p2bodydist x + 70  
+y = p2bodydist y + 1
+
+[State 4311]
+type = ChangeAnim2
+trigger1 = Time = 0
+value = 6000
+
+[State 4311]
+type = changestate
+trigger1 = pos y < 0
+value = 1098
+ctrl = 0
+
+;----------------------------------------------------------------------------------------
+;l'animation espace
+[statedef 4302]
+Type    = A
+movetype= A
+physics = S
+anim = 4305
+sprpriority = -4
+velset = 0,0
+ctrl = 0
+
+[state 4302]
+type = assertspecial
+trigger1 = 1
+flag = nomusic
+flag2 = nofg
+
+[state 4302]
+type = playsnd
+trigger1 = time = 0
+value = 5,38
+volume = 999
+
+[state 4302]
+type = posset
+trigger1 = time = 260
+x = 10
+y = -80
+
+[state 4302]
+type = sprpriority
+trigger1 = time > 460
+value = 104
+
+[state 4302]
+type = playsnd
+trigger1 = time = 460
+value = 20,8
+volume = 255
+
+[state 4302]
+type = explod
+trigger1 = time = 460
+anim = 11116
+postype = p1
+
+[State 4302]
+Type = Turn
+Trigger1 = P2Dist X < 0
+
+[state 4302]
+type = explod
+trigger1 = time = 0
+anim = 4106
+superpause = 1
+supermovetime = 9999999999
+pausemovetime = 9999999999
+ignorehitpause = 1
+postype = back
+bindtime = -1
+ownpal = 1
+pos = -160,-130
+removetime = 1150
+sprpriority = -3
+
+[state 4302]
+type = explod
+trigger1 = time = 0
+anim = 4302
+postype = back
+superpause = 1
+scale = 0.75,0.75
+supermovetime = 9999999999
+pausemovetime = 9999999999
+ignorehitpause = 1
+ownpal = 1
+removetime = 260
+sprpriority = 100
+
+[state 4302]
+type = explod
+trigger1 = time = 0
+anim = 4303
+postype = back
+superpause = 1
+supermovetime = 9999999999
+pausemovetime = 9999999999
+ignorehitpause = 1
+velocity = 0,-0.5
+scale = 0.2,0.2
+ownpal = 1
+pos = 190,230
+removetime = 260
+sprpriority = 101
+
+[state 4302]
+type = explod
+trigger1 = time = 260
+anim = 4304
+postype = p2
+superpause = 1
+supermovetime = 9999999999
+pausemovetime = 9999999999
+ignorehitpause = 1
+ownpal = 1
+pos = 190,230
+removetime = 100
+sprpriority = 106
+
+[state 4302]
+Type = HitDef
+Trigger1 = time = 470
+Trigger2 = AnimElem = 2
+Trigger3 = AnimElem = 3
+Trigger4 = AnimElem = 4
+Trigger5 = AnimElem = 5
+Trigger6 = AnimElem = 6
+Trigger7 = AnimElem = 7
+Trigger8 = AnimElem = 8
+Trigger9 = AnimElem = 9
+Trigger10 = AnimElem = 10
+Trigger11 = AnimElem = 11
+Trigger12 = AnimElem = 12
+Trigger13 = AnimElem = 13
+Trigger14 = AnimElem = 14
+Trigger15 = AnimElem = 15
+Trigger16 = AnimElem = 16
+Trigger17 = AnimElem = 17
+Trigger18 = AnimElem = 18
+Trigger19 = AnimElem = 19
+Trigger20 = AnimElem = 20
+Trigger21 = AnimElem = 21
+Trigger22 = AnimElem = 22
+Attr = S, HA
+AnimType  = Hard
+Damage    = 1,10
+priority  = 9
+guardflag = MA
+pausetime = 0,20
+sparkno = -1
+guard.sparkno	= -1
+;sparkxy = -10,-60
+hitsound = -1
+getpower = 10
+guardsound = S20, 3
+ground.Type = Trip
+ground.slidetime = 0
+ground.hittime  = 22
+ground.velocity = -1
+air.velocity = -3,-3
+fall.AnimType = Hard
+p2stateno = 4312
+
+[state 4302]
+type = changeanim
+trigger1 = time = 900
+value = 4310
+
+[state 4302]
+type = explod
+trigger1 = time = 900
+anim = 4304
+postype = p1
+sprpriority = 110
+bindtime = -1
+removetime = 250
+
+[state 4302]
+type = changestate
+trigger1 = time = 1150
+value = 4303
+ctrl = 1
+
+;---------------------------------------------------------------------------------------
+;retomber mortel
+[statedef 4303]
+Type    = A
+movetype= A
+physics = S
+anim = 4310
+velset = 0,15
+ctrl = 0
+
+[state 4302]
+Type = HitDef
+Trigger1 = time = 0
+Attr = S, HA
+AnimType  = Hard
+Damage    = 1,10
+priority  = 9
+guardflag = MA
+pausetime = 0,20
+sparkno = -1
+guard.sparkno	= -1
+;sparkxy = -10,-60
+hitsound = -1
+getpower = 10
+guardsound = S20, 3
+ground.Type = Trip
+ground.slidetime = 0
+ground.hittime  = 22
+ground.velocity = -1
+air.velocity = -3,-3
+fall.AnimType = Hard
+p2stateno = 4313
+
+[state 4303]
+type = posset
+trigger1 = time = 0
+y = -1000
+
+[state 4303]
+type = playsnd
+trigger1 = pos y < 0
+value = 5,36
+volume = 255
+
+[state 4303]
+type = playsnd
+trigger1 = pos y < 0
+value = 5,37
+volume = 255
+
+[state 4303]
+type = changestate
+trigger1 = pos y < 0
+value = 1093
+
+
+

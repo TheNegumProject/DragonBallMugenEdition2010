@@ -1,0 +1,261 @@
+
+[statedef 10191]
+Type    = S
+movetype= A
+physics = S
+ctrl = 0
+anim = 191
+
+[state 10191]
+type = playsnd
+trigger1 = time = 20
+value = 5 , 14
+volume = 255
+
+[state 10191]
+type = playsnd
+trigger1 = animelem = 2
+value = 0, 5
+volume = 255
+
+[state 10191]
+type = playsnd
+trigger1 = animelem = 5
+value = 5, 10
+volume = 255
+
+[state 10191]
+type = playsnd
+trigger1 = animelem = 15
+value = 1, 3
+volume = 255
+
+[state 10191]
+type = playsnd
+trigger1 = animelem = 16
+value = 4, 3
+volume = 255
+
+[state 10191]
+type = playsnd
+trigger1 = animelem = 15
+value = 5, 7
+
+[state 10191]
+type = playsnd
+trigger1 = time = 760
+value = 5,15
+
+[state 10191]
+type = explod
+trigger1 = animelem = 15
+anim = 4050
+sprpriority = 3
+
+[state 10191]
+type = explod
+trigger1 = animelem = 15
+anim = 1
+sprpriority = 3
+removetime = 390
+
+[state 10191]
+type = explod
+trigger1 = animelem = 2
+anim = 1041
+sprpriority = 1
+removetime = 480
+
+[state 10191]
+type = explod
+trigger1 = animelem = 15
+anim = 4042
+sprpriority = -1
+removetime = 370 
+
+[state 10191]
+type = explod
+trigger1 = time = 760
+anim = 30000
+sprpriority = 99
+ownpal = 1
+
+[state 10191]
+type = helper
+trigger1 = animelem = 16
+superpause = 1
+supermovetime = 9999999999
+pausemovetime = 9999999999
+ignorehitpause = 1
+helpertype = Normal
+name = "fin du monde vs sephi"
+id = 14106
+tile = 1,0
+pos = 0,0
+postype = left
+stateno	= 14106
+ownpal	= 1
+
+[State 10191, EnvShake] 
+type = EnvShake
+Trigger1 = AnimElem = 2
+time = 520
+ampl = 4
+freq = 127
+
+[State 10191:BGPalFX]
+type	= BGPalFX
+trigger1= ((Time > 355) && ((GameTime%70) = 0))
+time	= 10
+add	= 20,20,20
+mul	= 256,256,256
+sinadd	= 200,200,200,4
+invertall= 1
+color	= 256
+
+[State 10191:Helper]
+type = Helper
+trigger1 = (Time > 355) && ((GameTime%10) = 0) && (Random < 249) && (NumHelper(183) < 5)
+helpertype = Normal
+name = "Rock000"
+id = 183
+pos = 0,0
+postype	= p1
+facing	= 0
+stateno	= 183
+keyctrl	= 0
+ownpal	= 1
+supermovetime = 0
+pausemovetime = 0
+size.xscale = (IfElse(Random <= 799,0.75,2))
+size.yscale = (IfElse(Random <= 799,0.75,2))
+
+[State 10191:Helper]
+type = Helper
+trigger1 = (Time > 355) && ((GameTime%20) = 0) && (Random > 749) && (NumHelper(184) < 5)
+helpertype = Normal
+name = "Rock001"
+id = 184
+pos = 0,0
+postype	= p1
+facing	= 0
+stateno	= 184
+keyctrl	= 0
+ownpal = 1
+supermovetime = 0
+pausemovetime = 0
+size.xscale = (IfElse(Random <= 499,0.75,0.50))
+size.yscale = (IfElse(Random <= 499,0.75,0.50))
+
+[State 10191:Helper]
+type = Helper
+trigger1 = (Time > 355) && ((GameTime%30) = 0) && (Random = [249,749]) && (NumHelper(185) < 5)
+helpertype = Normal
+name = "Rock002"
+id = 185
+pos = 0,0
+postype	= p1
+facing	= 0
+stateno	= 185
+keyctrl	= 0
+ownpal	= 1
+supermovetime = 0
+pausemovetime = 0
+size.xscale = (IfElse(Random <= 499,0.50,0.75))
+size.yscale = (IfElse(Random <= 499,0.50,0.75))
+
+[State 10191]
+Type = VarSet
+Trigger1 = AnimElem = 24
+Trigger1 = Alive = 1
+Trigger1 = Var(5) = 0
+var(5) = 1
+
+[State 10191]
+type	= AssertSpecial
+trigger1= (Time < 950)
+flag	= Intro
+flag2	= NoBarDisplay
+flag3	= NoMusic
+
+;------------------------------------------------------------------------------------
+;mon double ??
+
+[statedef 10192]
+Type    = S
+movetype= A
+physics = S
+ctrl = 0
+anim = 182
+
+[state 10192]
+type = playsnd
+trigger1 = animelem = 4
+value = 21, 0
+
+[state 10192]
+type = velset
+trigger1 = animelem = 4
+x = 10
+
+[state 10192]
+type = explod
+trigger1 = time = 150
+pos = 0 , -76
+anim = 3017
+sprpriority = 3
+removetime = 50
+ 
+[state 10192]
+type = HitDef
+Trigger1 = AnimElem = 4
+attr = S, SA
+animtype = Hard
+damage    = 1,0
+priority  = 99999
+hitflag = MAD
+guardflag = MA
+pausetime = 15,7
+sparkxy = -10,-60
+hitsound = S5, 13
+guardsound = S20, 3
+getpower = 5
+givepower = 10
+ground.type = Trip
+ground.slidetime = 25
+ground.hittime  = 25
+ground.velocity = -20
+guard.velocity = -25
+air.velocity = -20,-5
+airguard.velocity = -25,-5
+fall = 1
+fall.recover = 200
+
+[State 10192]
+type			= AssertSpecial
+trigger1		= (Time < 300)
+flag			= Intro
+flag2			= NoBarDisplay
+flag3			= NoMusic
+
+;------------------------------------------------------------------------------------
+;v.s himan
+[statedef 10193]
+Type    = S
+movetype= A
+physics = S
+ctrl = 0
+anim = 22
+
+[state 10193]
+type = varset
+trigger1 = time = 0
+var(5) = 1
+
+[State 10193]
+type			= AssertSpecial
+trigger1		= (Time < 300)
+flag			= Intro
+flag2			= NoBarDisplay
+flag3			= NoMusic
+
